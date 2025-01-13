@@ -24,10 +24,10 @@ author:
   avatar           : "profile.png"
   name             : "Nurwegiono"
   pronouns         : # example: "His"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Lecturer at Ma Chung University"
   location         : "Malang, Indonesia"
-  employer         : "Universitas Ma Chung"
-  uri              : # URL
+  employer         : "Ma Chung University"
+  uri              : # https://machung.ac.id/prodi-sistem-informasi/
   email            : "muhammad.nurwegiono[at]machung.ac.id" 
 
   # Academic websites
