@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Nurwegiono's Homepage"
+title                    : "Personal Homepage"
 title_separator          : "-"
 name                     : &name "Muhammad Nurwegono"
 description              : &description "personal description"
@@ -22,7 +22,7 @@ repository               : "mnurwegiono/mnurwegiono.github.io"
 author:
   # Biographic information
   avatar           : "muhammad-nurwegiono.jpg"
-  name             : "Nurwegiono"
+  name             : "Muhammad Nurwegiono"
   pronouns         : # example: "His"  
   bio              : "Lecturer at Ma Chung University"
   location         : "Malang, Indonesia"
