@@ -21,7 +21,7 @@ repository               : "mnurwegiono/mnurwegiono.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "muhammad-nurwegiono.jpeg"
+  avatar           : "muhammad-nurwegiono.jpg"
   name             : "Nurwegiono"
   pronouns         : # example: "His"  
   bio              : "Lecturer at Ma Chung University"
