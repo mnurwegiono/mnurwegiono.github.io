@@ -16,20 +16,19 @@ Education
 
 Work experience
 ======
-* Ma Chung University
+* Ma Chung University (2024 - Current)
   * Editor-in-Chief: Kurawal Journal (Journal of Technology, Information, and Industry), Ma Chung University. Spearheading the editorial operations of Kurawal Journal, a reputable academic journal in the fields of technology, information, and industry, currently indexed in leading international databases such as Copernicus, ABCD Indexing, and Dimensions.
-  * Reviewer
-  * Lecturer
+  * Reviewer: Information Systems Proceedings, Ma Chung University. Conducting rigorous peer reviews for high-quality research submissions in Information Systems, ensuring the integrity and scholarly contribution of conference proceedings.
+  * Lecturer: Mobile Programming, Algorithm and Introduction to Programming, Database, E-Business, and Knowledge Management System, Algorithm and Programming Language at Ma Chung University.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Hobart and Wiliam Smith Colleges (2022 -2023)
+  * Research Associate: •	Supported the professor in drafting and organizing presentations on research findings, ensuring clear and impactful delivery of data and insights.
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Indiana University (2020 - 2022)
+  * Administrative Assistant: Effectively communicated with students, staff, and guests, ensuring smooth coordination and fostering a positive, collaborative environment Handled packages, mail, maintenance requests, pest control issues, and addressed inquiries from students, staff, and guests to ensure efficient operations and a well-maintained environment.
+
+  * STTI NIIT I-Tech (2016 -2018)
+    * Lecturer Assistant: Developed and presented lectures to undergraduate students on key topics including programming, data structures, and software design, fostering strong technical foundations and critical thinking skills. Assisted in creating online resources, including syllabus and lecture slides, for the course, making them accessible to students via GitHub
   
 Skills
 ======
