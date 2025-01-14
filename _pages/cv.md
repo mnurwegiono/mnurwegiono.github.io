@@ -11,16 +11,15 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Master in Computer Science, IPB University, 2019
+* Bachelor in Information System, STTI NIIT I-Tech, 2013
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Ma Chung University
+  * Editor-in-Chief: Kurawal Journal (Journal of Technology, Information, and Industry), Ma Chung University. Spearheading the editorial operations of Kurawal Journal, a reputable academic journal in the fields of technology, information, and industry, currently indexed in leading international databases such as Copernicus, ABCD Indexing, and Dimensions.
+  * Reviewer
+  * Lecturer
 
 * Fall 2015: Research Assistant
   * Github University
