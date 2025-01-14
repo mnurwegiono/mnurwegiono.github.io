@@ -52,19 +52,19 @@ Leadership & Activities
 ======
 * IPB University (2017 - 2017)
   * Head of International Affairs, Bogor Science Club (BSC): 
-    • Collaborated effectively with the International Students Association in the English Program to plan and execute impactful initiatives.
-    • Launched and managed the successful "Indonesian Scientist Talks" program, fostering engaging dialogue and knowledge sharing within the university community.
+    * Collaborated effectively with the International Students Association in the English Program to plan and execute impactful initiatives.
+    * Launched and managed the successful "Indonesian Scientist Talks" program, fostering engaging dialogue and knowledge sharing within the university community.
 
 * Ikatan Ilmuwan Indonesia Internasional (2017 - 2017)
   * Field Coordinator and Editor of “Kisah 25 Ilmuwan Indonesia yang Mendunia” Book:
-    • Planned and built a partnership with Gramedia as a publisher of Kisah Ilmuwan Indonesia yang Mendunia book.
-    • Prepared, collected, interviewed, and gave assignments to selected students in interviewing and writing the life stories of Indonesian scientists for the “Kisah 25 Ilmuwan Indonesia yang Mendunia” book.
-    • Planned and launched the “Kisah 25 Ilmuwan Indonesia yang Mendunia” book with the Ministry of Education, Culture, Research, and Technology Indonesia.
+    * Planned and built a partnership with Gramedia as a publisher of Kisah Ilmuwan Indonesia yang Mendunia book.
+    * Prepared, collected, interviewed, and gave assignments to selected students in interviewing and writing the life stories of Indonesian scientists for the “Kisah 25 Ilmuwan Indonesia yang Mendunia” book.
+    * Planned and launched the “Kisah 25 Ilmuwan Indonesia yang Mendunia” book with the Ministry of Education, Culture, Research, and Technology Indonesia.
 
 * Ikatan Ilmuwan Indonesia Internasional (2012 - 2016)
   * Member of Media Divison:
-    • Conceptualized, developed, and maintained the organization's website, ensuring user-friendliness and accessibility for a global audience.
-    • Successfully facilitated engaging online discussions as moderator for the I-4 Course and I-4 Talks program, connecting researchers and participants in a dynamic learning environment.
+    * Conceptualized, developed, and maintained the organization's website, ensuring user-friendliness and accessibility for a global audience.
+    * Successfully facilitated engaging online discussions as moderator for the I-4 Course and I-4 Talks program, connecting researchers and participants in a dynamic learning environment.
 
 Skills & Interests
 ======
