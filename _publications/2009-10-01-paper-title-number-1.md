@@ -6,7 +6,7 @@ permalink: /publication/2009-10-01-paper-title-number-1
 excerpt: 'This paper is about Mobile Application Development for Burger Restaurant Ordering and Payment with Waterfall Approach.'
 date: 2024-12-31
 venue: 'Conference on Electrical Engineering, Informatics, Industrial Technology, and Creative Media 2024'
-paperurl: 'http://academicpages.github.io/files/paper-ittelkom.pdf'
+paperurl: 'http://mnurwegiono.github.io/files/paper-ittelkom.pdf'
 citation: 'M Nurwegiono, R Setiawan. (2024). &quot;Pengembangan Aplikasi Mobile untuk Pemesanan dan Pembayaran Restoran Burger dengan Pendekatan Waterfall.&quot; <i>Journal 1</i>. 1(1).'
 ---
 
