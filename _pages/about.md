@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Muhammad Nurwegiono's Personal Website"
+title: "Muhammad Nurwegiono"
 author_profile: true
 redirect_from: 
   - /about/
