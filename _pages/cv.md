@@ -66,11 +66,12 @@ Leadership & Activities
     * Conceptualized, developed, and maintained the organization's website, ensuring user-friendliness and accessibility for a global audience.
     * Successfully facilitated engaging online discussions as moderator for the I-4 Course and I-4 Talks program, connecting researchers and participants in a dynamic learning environment.
 
-Skills & Interests
+Projects
 ======
-* Programming Language: Python, C++, Java, PHP, HTML/CSS, and JavaScript
-* Technical Skills: Software development, Web development, web design, graphic design, and video editing
-* Instructional Tools: Ms. Teams, Moodle, CANVA, Google Classroom, Turnitin, Grammarly
+* Developing and maintaining Dr. Dessy Irawati’s website (May 2022 – Present): Tilburg, Netherlands 
+* Developing and maintaining Dr. Roel Rutten’s website (September 2023 – Present): Tilburg, Netherlands
+* Developing and maintaining TissuePro Technology (November 2015 – Present): Gainesville, Florida, USA
+* Redesigned Giant Supermarket Malaysia Website (May 2012 – July 2012): Malaysia
 
 Licenses & Certifications
 ======
@@ -78,22 +79,8 @@ Licenses & Certifications
 * CCNA Exploration: Network Fundamentals (May 2012): CISCO, Jakarta, Jakarta, Indonesia
 * IT Essentials: PC Hardware and Software (February 2010): CISCO, Medan, North Sumatra Indonesia
 
-Licenses & Certifications
+Skills & Interests
 ======
-* Developing and maintaining Dr. Dessy Irawati’s website (May 2022 – Present): Tilburg, Netherlands 
-* Developing and maintaining Dr. Roel Rutten’s website (September 2023 – Present): Tilburg, Netherlands
-* Developing and maintaining TissuePro Technology (November 2015 – Present): Gainesville, Florida, USA
-* Redesigned Giant Supermarket Malaysia Website (May 2012 – July 2012): Malaysia
-
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* Programming Language: Python, C++, Java, PHP, HTML/CSS, and JavaScript
+* Technical Skills: Software development, Web development, web design, graphic design, and video editing
+* Instructional Tools: Ms. Teams, Moodle, CANVA, Google Classroom, Turnitin, Grammarly
