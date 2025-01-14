@@ -47,7 +47,14 @@ Work experience
 
 * BINUS Center (2008 - 2009)
   * Instructor: Taught courses on website development using Dreamweaver, photo editing with Photoshop, and programming in C++, equipping students with essential technical skills.	Successfully delivered engaging C++ instruction to students at SMP Sutomo 1 Medan, North Sumatra, fostering their understanding of fundamental programming concepts and problem-solving skills
-  
+
+Leadership & Activities
+======
+* IPB University (2017 - 2017)
+  * Head of International Affairs, Bogor Science Club (BSC): 
+    • Collaborated effectively with the International Students Association in the English Program to plan and execute impactful initiatives.
+    • •	Launched and managed the successful "Indonesian Scientist Talks" program, fostering engaging dialogue and knowledge sharing within the university community.
+
 Skills & Interests
 ======
 * Programming Language: Python, C++, Java, PHP, HTML/CSS, and JavaScript
@@ -59,10 +66,6 @@ Licenses & Certifications
 * English Second Language (May 2020): Broadview Learning Center, Bloomington, Indiana, USA.
 * CCNA Exploration: Network Fundamentals (May 2012): CISCO, Jakarta, Jakarta, Indonesia
 * IT Essentials: PC Hardware and Software (February 2010): CISCO, Medan, North Sumatra Indonesia
-
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
 
 Licenses & Certifications
 ======
