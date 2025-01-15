@@ -1,14 +1,13 @@
 ---
-title: "Paper Title Number 2"
+title: "Pengembangan Sistem Informasi Berbasis Artificial Intelligence untuk Pencarian dan Profiling Ilmuwan Indonesia di Luar Negeri"
 collection: publications
 category: manuscripts
-permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+permalink: /publication/paper-senam-2
+excerpt: 'This paper is about Information System based on AI for Indonesian Scientist.'
+date: 2024-09-10
+venue: 'Prosiding SENAM 2024, Universitas Ma Chung'
+paperurl: 'http://mnurwegiono.github.io/files/paper-senam-2.pdf'
+citation: 'M Nurwegiono, R Setiawan. (2024). &quot;Pengembangan Sistem Informasi Berbasis Artificial Intelligence untuk Pencarian dan Profiling Ilmuwan Indonesia di Luar Negeri.&quot; <i>Journal 2</i>. 1(2).'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Perpindahan ilmuwan Indonesia ke luar negeri merupakan fenomena yang semakin sering terjadi. Keberadaan mereka memberikan kontribusi yang signifikan terhadap kemajuan ilmu pengetahuan dan teknologi di Indonesia. Namun informasi terkait lokasi dan profil mereka masih terfragmentasi dan sulit diakses. Hal ini menghambat upaya kerjasama dan pemanfaatan potensi mereka untuk pembangunan nasional. Studi ini bertujuan untuk mengembangkan sistem informasi berbasis AI (Artificial Intelligence) yang dapat membantu pencarian profil ilmuwan Indonesia di luar negeri. Sistem ini diharapkan dapat menjadi platform yang efektif untuk mengumpulkan informasi ilmuwan Indonesia di luar negeri. Studi ini menggunakan metode pengembangan sistem informasi dengan pendekatan Agile. Sistem ini dibangun menggunakan teknologi AI seperti Natural Language Processing (NLP) dan Machine Learning (ML) untuk memproses data teks dan gambar dari berbagai sumber termasuk jejaring sosial, situs web organisasi studi, dan publikasi ilmiah. Studi ini menciptakan sistem informasi berbasis AI yang dapat mencari dan membuat profil ilmuwan Indonesia di luar negeri. Sistem dapat mengidentifikasi ilmuwan berdasarkan nama, afiliasi institusi, bidang keahlian, dan informasi lainnya. Sistem ini juga menyediakan kemampuan untuk melihat profil ilmiah, termasuk informasi kontak, riwayat pendidikan, dan penghargaan yang dimenangkan. Pengembangan sistem informasi berbasis AI untuk mencari dan membuat profil ilmuwan Indonesia di luar negeri merupakan langkah penting untuk mempererat koneksi dan kolaborasi ilmuwan Indonesia di dalam dan luar negeri. Sistem ini diharapkan dapat membantu memaksimalkan potensi ilmuwan Indonesia untuk memajukan ilmu pengetahuan dan teknologi di Indonesia.
