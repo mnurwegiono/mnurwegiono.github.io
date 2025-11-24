@@ -1,119 +1,270 @@
-# Academic Pages
-**Academic Pages is a Github Pages template for academic websites.**
+```markdown
+# 🌐 Academic Personal Website Template
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+A clean and modern GitHub Pages template for academic personal websites, based on the Minimal Mistakes theme.
 
-# Getting Started
+Showcase your research, publications, and projects with ease.
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+![License](https://img.shields.io/github/license/mnurwegiono/mnurwegiono.github.io)
+![GitHub stars](https://img.shields.io/github/stars/mnurwegiono/mnurwegiono.github.io?style=social)
+![GitHub forks](https://img.shields.io/github/forks/mnurwegiono/mnurwegiono.github.io?style=social)
+![GitHub issues](https://img.shields.io/github/issues/mnurwegiono/mnurwegiono.github.io)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/mnurwegiono/mnurwegiono.github.io)
+![GitHub last commit](https://img.shields.io/github/last-commit/mnurwegiono/mnurwegiono.github.io)
 
-See more info at https://academicpages.github.io/
+<img src="https://img.shields.io/badge/language-JavaScript-yellow.svg" alt="JavaScript">
+<img src="https://img.shields.io/badge/platform-GitHub%20Pages-blue.svg" alt="GitHub Pages">
+<img src="https://img.shields.io/badge/license-MIT-green.svg" alt="MIT License">
 
-## Running locally
+## 📋 Table of Contents
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+- [About](#about)
+- [Features](#features)
+- [Demo](#demo)
+- [Quick Start](#quick-start)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [FAQ](#faq)
+- [License](#license)
+- [Support](#support)
+- [Acknowledgments](#acknowledgments)
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+## About
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+This project provides a ready-to-use GitHub Pages template tailored for academics and researchers. It's designed to be clean, responsive, and easy to customize, allowing you to quickly set up a professional online presence.  It is based on the popular Minimal Mistakes Jekyll theme, offering a familiar and well-documented foundation.
 
-## Using Docker
+The template solves the problem of creating a polished academic website from scratch. It provides a pre-configured structure for showcasing publications, projects, CV, and other relevant information. The target audience includes professors, researchers, graduate students, and anyone in academia who wants to establish a professional online presence.
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
+Key technologies include JavaScript for interactive elements, HTML/CSS for styling, and GitHub Pages for hosting. The architecture leverages the Minimal Mistakes theme, providing a robust and customizable framework. The unique selling point is its focus on academic content and its ease of deployment on GitHub Pages.
 
-Start by build the container:
+## ✨ Features
 
+- 🎯 **Academic Focus**: Pre-built sections for publications, projects, CV, and contact information.
+- ⚡ **Performance**: Optimized for fast loading times and smooth browsing experience.
+- 🎨 **UI/UX**: Clean and modern design based on the Minimal Mistakes theme.
+- 📱 **Responsive**: Fully responsive layout that adapts to different screen sizes.
+- 🛠️ **Extensible**: Easy to customize and extend with your own content and styling.
+- 🌐 **GitHub Pages Ready**: Designed for seamless deployment on GitHub Pages.
+
+## 🎬 Demo
+
+🔗 **Live Demo**: [https://mnurwegiono.github.io/](https://mnurwegiono.github.io/)
+
+### Screenshots
+![Homepage](screenshots/homepage.png)
+*Homepage showcasing key information and navigation.*
+
+![Publications Page](screenshots/publications.png)
+*Publications page displaying a list of academic publications.*
+
+## 🚀 Quick Start
+
+Clone and run in 3 steps:
 ```bash
-docker build -t jekyll-site .
+git clone https://github.com/mnurwegiono/mnurwegiono.github.io.git
+cd mnurwegiono.github.io
+bundle install # If you don't have bundler: gem install bundler
+bundle exec jekyll serve
 ```
 
-Next, run the container:
+Open [http://localhost:4000](http://localhost:4000) to view it in your browser.
+
+## 📦 Installation
+
+### Prerequisites
+- Ruby (with Jekyll)
+- Git
+- Bundler
+
+### Option 1: From Source
+
 ```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
+# Clone repository
+git clone https://github.com/mnurwegiono/mnurwegiono.github.io.git
+cd mnurwegiono.github.io
+
+# Install dependencies
+bundle install
+
+# Start development server
+bundle exec jekyll serve
 ```
 
-To run the `docker run` command on Windows, you need to adjust the syntax for the volume mapping (`-v`) as Windows uses different path formats. Here's how to run your command on Windows:
+## 💻 Usage
 
-### Steps for Windows:
-1. **Check Docker Installation**: Ensure Docker is installed and running.
-2. **Adjust Path for Volume Mapping**:
+### Basic Usage
 
-   - On Windows, replace `$(pwd)` with the full absolute path to your current directory. For example:
+1.  **Edit `_config.yml`**:  Customize your personal information, social media links, and website settings.
+2.  **Add Content**:  Create Markdown files in the `_posts`, `_pages`, and `_projects` directories to add your publications, projects, and other content.
+3.  **Customize Styles**:  Modify the CSS files in the `assets/css` directory to change the look and feel of your website.
 
-     ```bash
-     -v C:\path\to\your\site:/usr/src/app
-     ```
+### Example: Adding a New Publication
 
-### Full Command Example:
-```bash
-docker run -p 4000:4000 --rm -v C:\path\to\your\site:/usr/src/app jekyll-site
-```
+1.  Create a new Markdown file in the `_posts` directory, e.g., `_posts/2024-10-27-my-new-publication.md`.
 
-### Things to Keep in Mind:
-1. **Use PowerShell**:
-   - If you are using PowerShell, you can use `${PWD}` for the current directory:
-     ```bash
-     docker run -p 4000:4000 --rm -v ${PWD}:/usr/src/app jekyll-site
-     ```
+2.  Add the following content to the file:
 
-2. **Enable Docker File Sharing**:
-   - If your volume doesn't map correctly, ensure Docker has access to the drive where your project resides. To do this:
-     - Open Docker Desktop.
-     - Go to *Settings* → *Resources* → *File Sharing*.
-     - Add your drive (e.g., `C:`).
-
-3. **Run in Command Prompt or PowerShell**:
-   - In *Command Prompt*:
-   
-     ```bash
-     docker run -p 4000:4000 --rm -v C:\path\to\your\site:/usr/src/app jekyll-site
-     ```
-   - In *PowerShell*:
-
-     ```bash
-     docker run -p 4000:4000 --rm -v ${PWD}:/usr/src/app jekyll-site
-     ```
-
-# Maintenance
-
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
-
+```markdown
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+title: "My New Publication"
+date: 2024-10-27
+venue: "Journal of Awesome Research"
+citation: "Doe, J. (2024). My New Publication. Journal of Awesome Research, 1(1), 1-10."
+---
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+This is a brief description of my new publication.
+```
+
+## ⚙️ Configuration
+
+### `_config.yml`
+
+This file contains the main configuration settings for your website.  Here are some key options:
+
+```yaml
+title: Your Name
+email: your.email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A brief description of your research interests and expertise.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://your-username.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: your_twitter_handle
+github_username:  your-github-username
+
+# Build settings
+theme: minimal-mistakes
+plugins:
+  - jekyll-feed
+```
+
+### Front Matter
+
+Each Markdown file (e.g., posts, pages, projects) uses front matter to define metadata.  Here's an example:
+
+```yaml
+---
+title: "Project Title"
+date: 2024-10-27
+categories: [project]
+tags: [research, development]
+---
+```
+
+## 📁 Project Structure
+
+```
+mnurwegiono.github.io/
+├── _data/                # Data files (e.g., navigation menus)
+├── _includes/            # Reusable HTML snippets
+├── _layouts/             # Page layouts
+├── _posts/               # Blog posts
+├── _pages/               # Static pages (e.g., about, contact)
+├── _projects/            # Project pages
+├── assets/                # Assets (CSS, images, fonts)
+├── _config.yml           # Configuration file
+├── Gemfile                # Ruby dependencies
+├── README.md              # Project documentation
+└── LICENSE                # License file
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) (Placeholder - create this file) for details.
+
+### Quick Contribution Steps
+1. 🍴 Fork the repository
+2. 🌟 Create your feature branch (git checkout -b feature/AmazingFeature)
+3. ✅ Commit your changes (git commit -m 'Add some AmazingFeature')
+4. 📤 Push to the branch (git push origin feature/AmazingFeature)
+5. 🔃 Open a Pull Request
+
+### Development Setup
+```bash
+# Fork and clone the repo
+git clone https://github.com/yourusername/mnurwegiono.github.io.git
+
+# Install dependencies
+bundle install
+
+# Create a new branch
+git checkout -b feature/your-feature-name
+
+# Make your changes and test
+bundle exec jekyll serve
+
+# Commit and push
+git commit -m "Description of changes"
+git push origin feature/your-feature-name
+```
+
+### Code Style
+- Follow existing code conventions
+- Run `bundle exec jekyll serve` to preview changes
+- Add tests for new features (if applicable)
+- Update documentation as needed
+
+## Testing
+
+To test your changes locally, run:
+
+```bash
+bundle exec jekyll serve
+```
+
+This will start a local development server at [http://localhost:4000](http://localhost:4000).
+
+## Deployment
+
+This template is designed for easy deployment on GitHub Pages.
+
+1.  **Configure GitHub Pages**:  In your repository settings, enable GitHub Pages and select the `main` branch as the source.
+2.  **Set `baseurl`**:  If you are deploying to a subdirectory (e.g., `your-username.github.io/my-website`), set the `baseurl` in `_config.yml` accordingly.
+3.  **Push Changes**:  Push your changes to the `main` branch, and GitHub Pages will automatically build and deploy your website.
+
+## FAQ
+
+**Q: How do I change the theme?**
+
+A: This template uses the Minimal Mistakes theme.  You can customize the theme by modifying the CSS files in the `assets/css` directory or by overriding the default layouts in the `_layouts` directory.  Refer to the Minimal Mistakes documentation for more advanced customization options.
+
+**Q: How do I add a new page?**
+
+A: Create a new Markdown file in the `_pages` directory and add the following front matter:
+
+```yaml
+---
+title: "Page Title"
+permalink: /page-url/
+---
+```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### License Summary
+- ✅ Commercial use
+- ✅ Modification
+- ✅ Distribution
+- ✅ Private use
+- ❌ Liability
+- ❌ Warranty
+
+## 💬 Support
+
+- 📧 **Email**: your.email@example.com (Placeholder)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/mnurwegiono/mnurwegiono.github.io/issues)
+- 📖 **Documentation**: [Minimal Mistakes Documentation](https://mmistakes.github.io/minimal-mistakes/)
+
+## 🙏 Acknowledgments
+
+- 🎨 **Minimal Mistakes Theme**: [Michael Rose](https://github.com/mmistakes) for the excellent Minimal Mistakes theme.
+- 📚 **Libraries used**:
+  - [Jekyll](https://jekyllrb.com/) - Static site generator.
+- 👥 **Contributors**: Thanks to all [contributors](https://github.com/mnurwegiono/mnurwegiono.github.io/contributors)
+```
