@@ -1,0 +1,494 @@
+{
+  "person": {
+    "name": "Muhammad Nurwegiono, S.Kom., M.Kom.",
+    "title": "Lecturer (Information Systems) • Health Information Systems",
+    "affiliation": "Universitas Ma Chung",
+    "location": "Malang, Indonesia",
+    "email": "muhammad.nurwegiono@machung.ac.id",
+    "research_focus": [
+      "Health Information Systems",
+      "Clinical Decision Support Systems",
+      "Knowledge Management in Healthcare",
+      "Health Data Analytics",
+      "Applied Information Systems"
+    ],
+    "links": [
+      {
+        "label": "Google Scholar",
+        "href": "https://scholar.google.com/citations?user=aySeWLQAAAAJ"
+      },
+      {
+        "label": "SINTA",
+        "href": "https://sinta.kemdiktisaintek.go.id/authors/profile/6897560"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/muhammadnurwegiono"
+      },
+      {
+        "label": "Website",
+        "href": "https://mnurwegiono.github.io/"
+      },
+      {
+        "label": "Blog",
+        "href": "https://muhammadnurwegiono.wordpress.com/"
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "k": "Primary domain",
+      "v": "Health Information Systems",
+      "s": "Decision support, KM, analytics"
+    },
+    {
+      "k": "Education",
+      "v": "M.Kom (IPB)",
+      "s": "Computer Science (2016–2019)"
+    },
+    {
+      "k": "Recent research",
+      "v": "2 grants (2025)",
+      "s": "CF anemia DSS & AI writing pedagogy"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master's Degree (M.Kom) – Computer Science",
+      "school": "Institut Pertanian Bogor (IPB)",
+      "year": "2016–2019"
+    },
+    {
+      "degree": "Bachelor's Degree (S.Kom) – Information Systems",
+      "school": "STTI NIIT I-Tech",
+      "year": "2009–2013"
+    }
+  ],
+  "teaching": [
+    "Algoritma dan Pengantar Pemrograman",
+    "Praktikum Algoritma dan Pengantar Pemrograman",
+    "Pemrograman Bergerak",
+    "Praktikum Pemrograman Bergerak",
+    "Bahasa Pemrograman",
+    "Praktikum Bahasa Pemrograman",
+    "Konsep Basis Data",
+    "Sistem dan Administrasi Basis Data",
+    "Sistem Manajemen Pengetahuan",
+    "E-Bisnis"
+  ],
+  "projects": [
+    {
+      "name": "Decision Support System for Anemia Diagnosis (Certainty Factor, Laravel)",
+      "year": "2025",
+      "status": "Active",
+      "tag": "Clinical DSS / Web",
+      "desc": "Research and development of a web-based decision support system to assist anemia diagnosis using the Certainty Factor method, implemented with Laravel.",
+      "links": [
+        {
+          "label": "Overview",
+          "href": "projects.html#featured"
+        }
+      ]
+    },
+    {
+      "name": "Staggered & Collaborative Learning for AI Prompt Engineering",
+      "year": "2025",
+      "status": "Active",
+      "tag": "AI Education",
+      "desc": "Pedagogical research applying staggered and collaborative learning to develop students’ prompt engineering skills for academic writing.",
+      "links": [
+        {
+          "label": "Overview",
+          "href": "research.html#grants"
+        }
+      ]
+    }
+  ],
+  "community_services": [
+    {
+      "year": "2025",
+      "title": "Optimalisasi Google Workspace untuk Data Center Akademik KB/TK Islam Terpadu Ulil Albab Malang",
+      "funding": "Universitas Ma Chung"
+    },
+    {
+      "year": "2025",
+      "title": "Implementasi Deep Learning Kurikulum Merdeka menggunakan AI sebagai Inovasi Teman Belajar bagi Komunitas Yos Tech",
+      "funding": "Universitas Ma Chung"
+    }
+  ],
+  "publications": [
+    {
+      "year": "2025",
+      "type": "Journal",
+      "title": "Penerapan Knowledge Management System Life Cycle (KMSLC) pada Pelayanan Manajemen Kantin",
+      "venue": "Jurnal Sistem Informasi Galuh",
+      "note": "KMSLC implementation case study."
+    },
+    {
+      "year": "2025",
+      "type": "Journal",
+      "title": "Sistem Manajemen Pengetahuan untuk Perbaikan Pelayanan Pelanggan di Forenoon Cafe Araya menggunakan metode KMSLC",
+      "venue": "Riau Jurnal Teknik Informatika",
+      "note": "Knowledge management system for service improvement."
+    },
+    {
+      "year": "2025",
+      "type": "Journal",
+      "title": "Knowledge Management System Development to Improve Customer Service Quality on a Cake Shop",
+      "venue": "Jurnal KURAWAL",
+      "note": "KMS development and evaluation."
+    },
+    {
+      "year": "2024",
+      "type": "Conference",
+      "title": "Pengembangan Aplikasi Mobile untuk Pemesanan dan Pembayaran Restoran Burger dengan Pendekatan Waterfall",
+      "venue": "CEEITCM 2024",
+      "note": "Mobile app development with Waterfall."
+    },
+    {
+      "year": "2024",
+      "type": "Journal",
+      "title": "Evaluasi Kualitas Sistem Informasi Pergudangan pada Perusahaan Distributor Obat-Obatan Menggunakan Model McCall",
+      "venue": "Jurnal Teknologi dan Manajemen Informatika",
+      "note": "Software quality evaluation using McCall."
+    },
+    {
+      "year": "2024",
+      "type": "Journal",
+      "title": "Pelatihan Pemanfaatan Zenodo sebagai Repositori Pribadi untuk Meningkatkan Visibilitas dan Sitasi Karya Ilmiah Dosen",
+      "venue": "Jurnal Pelayanan Hubungan Masyarakat",
+      "note": "Community-focused training and impact."
+    },
+    {
+      "year": "2024",
+      "type": "Journal",
+      "title": "Pengembangan Aplikasi Mobile untuk Peningkatan Layanan Kesehatan di Klinik Menggunakan Metode Waterfall: Studi Kasus Klinik XYZ",
+      "venue": "Jurnal Penelitian Sistem Informasi",
+      "note": "Clinic service improvement via mobile system."
+    },
+    {
+      "year": "2020",
+      "type": "Journal",
+      "title": "Pengembangan Sistem Manajemen Pengetahuan di Organisasi Asosiasi Alumni Program Beasiswa Amerika–Indonesia (ALPHA-I)",
+      "venue": "JTIIK",
+      "note": "Knowledge management in alumni association."
+    }
+  ],
+  "conferences": [
+    {
+      "year": "2024",
+      "title": "Conference on Electrical Engineering, Informatics, Industrial Technology, and Creative Media 2024",
+      "venue": "Universitas Telkom Purwokerto",
+      "note": "Oral presentation: Burger ordering & payment mobile app (Waterfall)."
+    },
+    {
+      "year": "2024",
+      "title": "Prosiding SENAM 2024",
+      "venue": "Universitas Ma Chung",
+      "note": "Oral presentation: AI-based scientist search & profiling system."
+    },
+    {
+      "year": "2025",
+      "title": "ICOMIT (Multidisciplinary Applications of Information Technology)",
+      "venue": "Universitas Brawijaya",
+      "note": "Oral presentation: KMS for raw material management using KMS Life Cycle Model."
+    }
+  ],
+  "books": [
+    {
+      "year": "2025",
+      "title": "Pengantar Arsitektur dan Organisasi Komputer",
+      "publisher": "Ma Chung Press",
+      "pages": "65"
+    },
+    {
+      "year": "2025",
+      "title": "Konsep Basis Data di Dunia Nyata",
+      "publisher": "Ma Chung Press",
+      "pages": "53"
+    }
+  ],
+  "ipr": {
+  "note": "Records are summarized from SINTA. Add official links (DJKI/SINTA record) if available.",
+  "items": [
+    {
+      "year": "2026",
+      "title": "Aplikasi Media Pembelajaran Dwibahasa Berbasis Augmented Reality (AR) untuk Edukasi Sejarah dan Arsitektur Kota Terlarang",
+      "category": "Hak Cipta",
+      "number": "EC002026014026",
+      "inventors": "Dhatu Sitaresmi; Muhammad Nurwegiono; Jeremia Valerian Lumban Gaol; Didit Prasetyo Nugroho",
+      "holder": "Universitas Ma Chung",
+      "verification": "Verified by Taufik Chairudin — 2026-01-23 10:18:53",
+      "link": ""
+    },
+    {
+      "year": "2025",
+      "title": "Model Pembelajaran Berbasis AI: Staggered & Collaborative Learning untuk Penulisan Karya Ilmiah di Perguruan Tinggi",
+      "category": "Hak Cipta",
+      "number": "EC002025119401",
+      "inventors": "Soetam Rizky Wicaksono; Rudy Setiawan; Muhammad Nurwegiono",
+      "holder": "Universitas Ma Chung",
+      "verification": "Verified by Taufik Chairudin — 2025-09-09 13:32:32",
+      "link": ""
+    },
+    {
+      "year": "2025",
+      "title": "SPK Sistem Pendeteksi Anemia",
+      "category": "Hak Cipta",
+      "number": "EC002025123294",
+      "inventors": "Muhammad Nurwegiono; Bita Parga Zen",
+      "holder": "Universitas Ma Chung",
+      "verification": "Verified by Taufik Chairudin — 2025-09-09 13:32:21",
+      "link": ""
+    }
+  ]
+},
+  "students_alumni": {
+    "note": "This page is designed to showcase supervised students, alumni achievements, and collaboration opportunities."
+  },
+  "invited_speaking": [
+    {
+      "year": "2024–2026",
+      "role": "Invited speaker / mentor",
+      "title": "Health IS & Applied Web Systems (topics vary by event)",
+      "venue": "Workshops, seminars, and campus programs (add details here)."
+    }
+  ],
+  "teaching_semester": {
+    "semester": "Genap 2025/2026",
+    "program": "Sistem Informasi",
+    "rows": [
+      {
+        "prodi": "MKU",
+        "smt": "4",
+        "kode": "MPK 430",
+        "jenis": "Wajib",
+        "mata_kuliah": "Pendidikan Kewarganegaraan",
+        "sks": "3",
+        "js": "3",
+        "kelas": "F",
+        "hari": "Rabu",
+        "waktu": "13.00–15.30",
+        "ruangan": "Theobroma Cacao"
+      },
+      {
+        "prodi": "SI",
+        "smt": "2",
+        "kode": "SSI1242",
+        "jenis": "Wajib",
+        "mata_kuliah": "Sistem dan Administrasi Basis Data",
+        "sks": "3",
+        "js": "3",
+        "kelas": "A",
+        "hari": "Kamis",
+        "waktu": "07.50–10.20",
+        "ruangan": "Laboratorium Ole Johan Dahl"
+      },
+      {
+        "prodi": "SI",
+        "smt": "2",
+        "kode": "SSI1240",
+        "jenis": "Wajib",
+        "mata_kuliah": "Bahasa Pemrograman",
+        "sks": "2",
+        "js": "2",
+        "kelas": "A",
+        "hari": "Selasa",
+        "waktu": "10.20–12.00",
+        "ruangan": "Laboratorium Ole Johan Dahl"
+      },
+      {
+        "prodi": "SI",
+        "smt": "2",
+        "kode": "SSI1241",
+        "jenis": "Wajib",
+        "mata_kuliah": "Praktikum Bahasa Pemrograman",
+        "sks": "1",
+        "js": "2",
+        "kelas": "A",
+        "hari": "Selasa",
+        "waktu": "13.00–14.40",
+        "ruangan": "Laboratorium Ole Johan Dahl"
+      },
+      {
+        "prodi": "SI",
+        "smt": "6",
+        "kode": "SSI5134",
+        "jenis": "Pilihan",
+        "mata_kuliah": "Sistem Manajemen Pengetahuan",
+        "sks": "3",
+        "js": "3",
+        "kelas": "A",
+        "hari": "Rabu",
+        "waktu": "07.50–10.20",
+        "ruangan": "Phycocyanin"
+      }
+    ]
+  },
+  "teaching_history": [
+    {
+      "semester": "2025/2026 Ganjil",
+      "rows": [
+        {
+          "mata_kuliah": "Praktikum Pemrograman Bergerak",
+          "kode": "SSI3141",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Praktikum Algoritma dan Pengantar Pemrograman",
+          "kode": "SSI1145",
+          "kelas": "1",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Pemrograman Bergerak",
+          "kode": "SSI3140",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Pancasila",
+          "kode": "MPK402",
+          "kelas": "F-SI",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Konsep Basis Data",
+          "kode": "SSI1142",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "E-Bisnis",
+          "kode": "SSI2146",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Algoritma dan Pengantar Pemrograman",
+          "kode": "SSI1144",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        }
+      ]
+    },
+    {
+      "semester": "2024/2025 Genap",
+      "rows": [
+        {
+          "mata_kuliah": "Sistem Manajemen Pengetahuan",
+          "kode": "SSI5134",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Sistem dan Administrasi Basis Data",
+          "kode": "SSI1242",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Praktikum Bahasa Pemrograman",
+          "kode": "SSI1241",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Pendidikan Agama",
+          "kode": "MPK401",
+          "kelas": "F",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "E-Bisnis",
+          "kode": "SSI2146",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Bahasa Pemrograman",
+          "kode": "SSI1240",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        }
+      ]
+    },
+    {
+      "semester": "2024/2025 Ganjil",
+      "rows": [
+        {
+          "mata_kuliah": "Sistem Manajemen Pengetahuan",
+          "kode": "SSI5134",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Praktikum Pemrograman Bergerak",
+          "kode": "SSI3141",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Praktikum Algoritma dan Pengantar Pemrograman",
+          "kode": "SSI1145",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Pemrograman Bergerak",
+          "kode": "SSI3140",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Konsep Basis Data",
+          "kode": "SSI1142",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "E-Bisnis",
+          "kode": "SSI2146",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Algoritma dan Pengantar Pemrograman",
+          "kode": "SSI1144",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        }
+      ]
+    },
+    {
+      "semester": "2023/2024 Genap",
+      "rows": [
+        {
+          "mata_kuliah": "Praktikum Pemrograman Bergerak",
+          "kode": "SSI3132",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Pemrograman Bergerak",
+          "kode": "SSI3131",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "Manajemen dan Proses TI",
+          "kode": "SSI1230",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        },
+        {
+          "mata_kuliah": "E-Bisnis",
+          "kode": "SSI3230",
+          "kelas": "A",
+          "pt": "Universitas Ma Chung"
+        }
+      ]
+    }
+  ]
+}
