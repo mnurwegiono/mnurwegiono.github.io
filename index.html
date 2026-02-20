@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Home | Muhammad Nurwegiono</title>
+  <meta name="description" content="Academic website of Muhammad Nurwegiono — Health Information Systems, decision support, knowledge management, and applied information systems."/>
+  <meta name="keywords" content="Muhammad Nurwegiono, Health Information Systems, Clinical Decision Support, Knowledge Management, Universitas Ma Chung, Information Systems"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css"/>
+  <style>
+    /* Custom styles: Foto profil & Menu sejajar */
+    .profile-img {
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0;
+      border-radius: 0; /* Let card handle radius */
+      border: none;
+    }
+    @media (min-width: 900px) {
+      .navlinks { gap: 10px; } /* Kurangi jarak antar menu */
+      .navlinks a { font-size: 14px; letter-spacing: -0.01em; } /* Perkecil font sedikit agar muat */
+    }
+    /* Gallery Styles */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+      margin-top: 14px;
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius2);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--bg2);
+      aspect-ratio: 4 / 3;
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .4s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 16px 14px;
+      background: linear-gradient(0deg, rgba(11,11,18,0.95) 0%, rgba(11,11,18,0.8) 60%, transparent 100%);
+    }
+    .caption-title { font-weight: 900; font-size: 15px; letter-spacing: -0.01em; color: #fff; }
+    .gallery-caption p { font-size: 12px; color: var(--muted); margin: 4px 0 0 0; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Home">
+          <div class="logo" aria-hidden="true"></div>
+          <span>
+            <span class="title">Muhammad Nurwegiono</span>
+            <span class="subtitle">Clinical Decision Support Systems</span>
+          </span>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary">
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="research.html">Research</a>
+          <a data-nav href="community.html">Service</a>
+          <a data-nav href="teaching.html">Teaching</a>
+          <a data-nav href="projects.html">Projects</a>
+          <a data-nav href="publications.html">Publications</a>
+          <a data-nav href="conferences.html">Talks</a>
+          <a data-nav href="books.html">Books</a>
+          <a data-nav href="ipr.html">IPR</a>
+        </nav>
+
+        <div class="navright">
+          <a class="btn" href="https://scholar.google.com/citations?user=aySeWLQAAAAJ" target="_blank" rel="noopener" title="Google Scholar">
+            Scholar
+          </a>
+          <button id="mobileToggle" class="iconbtn mobile-toggle" aria-label="Toggle menu">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobilePanel" class="mobile-panel" aria-label="Mobile">
+        <a data-nav href="about.html">About me</a>
+        <a data-nav href="research.html">Research</a>
+        <a data-nav href="community.html">Community Services</a>
+        <a data-nav href="teaching.html">Teaching</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="publications.html">Scientific Publications</a>
+        <a data-nav href="conferences.html">Conferences</a>
+        <a data-nav href="books.html">Book/Module</a>
+        <a data-nav href="ipr.html">Intellectual Property Rights</a>
+      </div>
+    </div>
+  </header>
+
+  
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="card inner reveal">
+          <span class="badge"><span class="dot"></span> Academic • Health Information Systems</span>
+          <div class="h1">Building trustworthy <span style="background:linear-gradient(135deg,var(--accent),var(--accent2)); -webkit-background-clip:text; background-clip:text; color:transparent;">digital health systems</span> that improve decisions and care.</div>
+          <p class="lead" style="margin-top:14px;">
+            Hi, I’m <b>Muhammad Nurwegiono</b>. I am a lecturer in the Information Systems program at <b>Ma Chung University</b>. I also work as a Web Developer at TissuePro Technology in Florida, USA.
+          </p>
+          <p class="p">
+            My research focuses on the design and development of Health Information Systems, particularly the integration of decision support systems, knowledge management, and data-driven technologies to improve healthcare services and clinical decision-making.
+          </p>
+          <p class="p" style="font-size:13px; color:var(--muted)">
+            <b>Research interests:</b> Health Information Systems, Clinical Decision Support Systems, Health Data Analytics, Knowledge Management in Healthcare, and Applied Information Systems.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="about.html">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              More about me
+            </a>
+            <a class="btn" href="publications.html">Publications</a>
+            <a class="btn" href="projects.html">Projects</a>
+            <!-- <a class="btn" href="assets/data.json" target="_blank" rel="noopener">Edit data.json</a> -->
+          </div>
+        </div>
+
+        <div class="card reveal" style="transition-delay: 100ms;">
+          <img src="assets/profile.jpg" class="profile-img" alt="Muhammad Nurwegiono" onerror="this.src='https://via.placeholder.com/400x450.png/0f1020/888?text=Add+assets/profile.jpg'; this.onerror=null;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="container">
+      <div class="grid-3">
+        <div class="card inner reveal">
+          <svg viewBox="0 0 24 24" fill="none" style="width:32px; height:32px; margin-bottom:12px; color:var(--accent);"><path d="M6 22h12M8 22V8.333a2 2 0 0 1 .4-1.2L10 5h4l1.6 2.133a2 2 0 0 1 .4 1.2V22M8 5h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="h3">What I do</div>
+          <p class="p">Design and evaluate information systems for healthcare settings—focusing on decision support, workflow efficiency, and knowledge capture.</p>
+          <a class="btn" href="research.html">Explore research</a>
+        </div>
+        <div class="card inner reveal" style="transition-delay: 100ms;">
+          <svg viewBox="0 0 24 24" fill="none" style="width:32px; height:32px; margin-bottom:12px; color:var(--accent);"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="h3">How I contribute</div>
+          <p class="p">Community service and capacity building through applied trainings (e.g., digital workplace tools & AI learning innovation).</p>
+          <a class="btn" href="community.html">Community services</a>
+        </div>
+        <div class="card inner reveal" style="transition-delay: 200ms;">
+          <svg viewBox="0 0 24 24" fill="none" style="width:32px; height:32px; margin-bottom:12px; color:var(--accent);"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 2H20v15H6.5A2.5 2.5 0 0 1 4 14.5v-10A2.5 2.5 0 0 1 6.5 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="h3">Teaching</div>
+          <p class="p">Current semester schedule and teaching history (courses across semesters).</p>
+          <a class="btn" href="teaching.html">Teaching</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="container">
+      <div class="h2 reveal">Recent Activities</div>
+      <p class="lead reveal" style="font-size: 14px; color: var(--muted);">A glimpse into recent workshops, presentations, and community engagements.</p>
+      <div class="gallery-grid">
+        <!-- Item 1 -->
+        <div class="gallery-item reveal" data-photos='[
+          {"src":"https://www.pediaexpert.id/assets/images/staff-khusus-wapres-achmad-adhitya.jpeg", "desc":"Presentation with Special Staff to the Vice President - Main Session"},
+          {"src":"https://www.pediaexpert.id/assets/images/staff-khusus-wapres-achmad-adhitya-2.jpeg", "desc":"Discussion on Digital Health Strategy"},
+          {"src":"https://www.pediaexpert.id/assets/images/staff-khusus-wapres-achmad-adhitya-4.jpeg", "desc":"Group Photo with Staff"},
+        ]'>
+          <img src="https://www.pediaexpert.id/assets/images/staff-khusus-wapres-achmad-adhitya-3.jpeg" alt="Zenodo Workshop">
+          <div class="gallery-caption">
+            <div class="caption-title">Presentation with Special Staff to the Vice President</div>
+            <p>Discussing strategic initiatives and digital transformation in healthcare with the Special Staff to the Vice President of Indonesia.</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="gallery-item reveal" style="transition-delay: 100ms;" data-photos='[
+          {"src":"https://www.pediaexpert.id/assets/images/wamen-komdigi-nezar-patria.jpeg", "desc":"Meeting with Deputy Minister of Komdigi - Presentation"},
+          {"src":"https://www.pediaexpert.id/assets/images/wamen-komdigi-nezar-patria-2.jpg", "desc":"Meeting with Deputy Minister of Komdigi - Presentation"},
+          {"src":"https://www.pediaexpert.id/assets/images/wamen-komdigi-nezar-patria-3.jpg", "desc":"Policy Recommendation Handover"}
+        ]'>
+          <img src="https://www.pediaexpert.id/assets/images/wamen-komdigi-nezar-patria-5.jpg" alt="AI in Education Workshop">
+          <div class="gallery-caption">
+            <div class="caption-title">Meeting with Deputy Minister of Komdigi</div>
+            <p>Presenting research and policy recommendations on digital infrastructure to the Deputy Minister of Communication and Digital Affairs (Komdigi).</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="gallery-item reveal" style="transition-delay: 200ms;" data-photos='[
+          {"src":"https://www.pediaexpert.id/assets/images/perwakilan-jica.jpeg", "desc":"Presentation with JICA Representatives - Opening"},
+          {"src":"https://www.pediaexpert.id/assets/images/perwakilan-jica-4.jpeg", "desc":"Collaboration Discussion"},
+          {"src":"https://www.pediaexpert.id/assets/images/perwakilan-jica-6.jpeg", "desc":"Collaboration Discussion"}
+        ]'>
+          <img src="https://www.pediaexpert.id/assets/images/perwakilan-jica-3.jpeg" alt="Google Workspace Training">
+          <div class="gallery-caption">
+            <div class="caption-title">Presentation with JICA Representatives</div>
+            <p>Engaging with the Japan International Cooperation Agency (JICA) on potential collaborations for health information systems development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="split">
+        <div class="card inner reveal">
+          <div class="h2">Featured</div>
+          <div class="list">
+            <div class="item">
+              <div class="meta">
+                <span class="pill ok">Active</span>
+                <span class="pill">2025</span>
+                <span class="pill info">Clinical DSS</span>
+              </div>
+              <div style="margin-top:10px; font-weight:900;">Anemia Diagnosis DSS (Certainty Factor, Laravel)</div>
+              <div class="p" style="margin-top:6px;">Web-based decision support to assist diagnosis and documentation workflows.</div>
+              <a class="btn" href="projects.html#featured">Read more</a>
+            </div>
+
+            <div class="item">
+              <div class="meta">
+                <span class="pill ok">Active</span>
+                <span class="pill">2025</span>
+                <span class="pill info">AI Education</span>
+              </div>
+              <div style="margin-top:10px; font-weight:900;">Collaborative Prompt Engineering for Academic Writing</div>
+              <div class="p" style="margin-top:6px;">Teaching innovation applying staggered learning and collaboration.</div>
+              <a class="btn" href="research.html#grants">Read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card inner reveal" style="transition-delay: 100ms;">
+          <div class="h2">Latest publications (snapshot)</div>
+          <!-- <div class="notice">This list is rendered from <span class="kbd">assets/data.json</span>. Keep it up-to-date by adding DOI/links and your newest papers.</div> -->
+          <div id="pubList" class="list" style="margin-top:12px;"></div>
+          <div class="actions">
+            <a class="btn" href="publications.html">See all publications</a>
+            <a class="btn" href="https://scholar.google.com/citations?user=aySeWLQAAAAJ" target="_blank" rel="noopener">Scholar profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px;">
+        <div>
+          <div style="font-weight:900; letter-spacing:-.01em;">Muhammad Nurwegiono</div>
+          <div><small>Health Information Systems • Universitas Ma Chung • 2026</small></div>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn" href="mailto:muhammad.nurwegiono@machung.ac.id">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/muhammadnurwegiono" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://sinta.kemdiktisaintek.go.id/authors/profile/6897560" target="_blank" rel="noopener">SINTA</a>
+          <a class="btn" href="https://muhammadnurwegiono.wordpress.com/" target="_blank" rel="noopener">Blog</a>
+        </div>
+      </div>
+      <!-- <div style="margin-top:12px; color:var(--muted2);">
+        Built for GitHub Pages. Edit <span class="kbd">assets/data.json</span> to update content.
+      </div> -->
+    </div>
+  </footer>
+
+  <button id="backToTop" class="iconbtn back-to-top" title="Back to top"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5m-7 7l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <button id="lightboxClose" class="iconbtn lightbox-close" title="Close"><svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <img id="lightboxImg" src="" alt="Enlarged view">
+    <div id="lightboxCaption" class="lightbox-caption"></div>
+    <button id="lightboxPrev" class="iconbtn lightbox-nav prev" title="Previous"><svg viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <button id="lightboxNext" class="iconbtn lightbox-nav next" title="Next"><svg viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </div>
+
+  <script src="assets/script.js" defer></script>
+
+  <!-- Page-specific script -->
+  <script>
+  (function(){
+    // Helper to escape HTML special characters
+    function esc(s){
+      return String(s ?? "").replace(/[&<>"']/g, m => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"
+      }[m]));
+    }
+
+    function escAttr(s){
+      return String(s ?? "").replace(/"/g, "&quot;").replace(/'/g, "\\'");
+    }
+
+    // Fetch data and render dynamic content for the homepage
+    fetch("assets/data.json")
+      .then(r => r.json())
+      .then(d => {
+        renderLatestPublications(d);
+      })
+      .catch(err => {
+        console.warn("Failed to load assets/data.json for homepage. Some content may be missing.", err);
+      });
+
+    function renderLatestPublications(d) {
+      const publications = d.publications || [];
+      const pubList = document.getElementById('pubList');
+      if (pubList && publications.length > 0) {
+        const recentPubs = publications.slice(0, 3); // Show 3 latest
+        pubList.innerHTML = recentPubs.map(p => `
+          <div class="item">
+            <div class="meta">
+              <span class="pill">${esc(p.year)}</span>
+              <span class="pill info">${esc(p.type)}</span>
+            </div>
+            <div style="margin-top:10px; font-weight:900;">${esc(p.title)}</div>
+            <div class="p" style="margin-top:6px;">
+              <em>${esc(p.venue)}</em>.
+              ${p.note ? `<span class="muted" style="display:block; margin-top:4px;">${esc(p.note)}</span>` : ''}
+            </div>
+            <div class="actions" style="margin-top:8px;">
+               <button class="btn" style="padding:6px 12px; font-size:12px;" onclick="copyBibtex('${escAttr(p.title)}', '${escAttr(p.authors)}', '${escAttr(p.year)}', '${escAttr(p.venue)}', '${escAttr(p.type)}')">Cite</button>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+  })();
+  </script>
+</body>
+</html>

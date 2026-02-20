@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Intellectual Property Rights | Muhammad Nurwegiono</title>
+  <meta name="description" content="Intellectual Property Rights for works by Muhammad Nurwegiono."/>
+  <meta name="keywords" content="Muhammad Nurwegiono, Health Informatics, Clinical Decision Support Systems, Knowledge Management, Universitas Ma Chung, Information Systems"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css"/>
+  <style>
+    @media (min-width: 900px) {
+      .navlinks { gap: 10px; }
+      .navlinks a { font-size: 14px; letter-spacing: -0.01em; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Home">
+          <div class="logo" aria-hidden="true"></div>
+          <span>
+            <span class="title">Muhammad Nurwegiono</span>
+            <span class="subtitle">Clinical Decision Support Systems</span>
+          </span>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary">
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="research.html">Research</a>
+          <a data-nav href="community.html">Service</a>
+          <a data-nav href="teaching.html">Teaching</a>
+          <a data-nav href="projects.html">Projects</a>
+          <a data-nav href="publications.html">Publications</a>
+          <a data-nav href="conferences.html">Talks</a>
+          <a data-nav href="books.html">Books</a>
+          <a data-nav href="ipr.html">IPR</a>
+        </nav>
+
+        <div class="navright">
+          <a class="btn" href="https://scholar.google.com/citations?user=aySeWLQAAAAJ" target="_blank" rel="noopener" title="Google Scholar">
+            Scholar
+          </a>
+          <button id="mobileToggle" class="iconbtn mobile-toggle" aria-label="Toggle menu">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobilePanel" class="mobile-panel" aria-label="Mobile">
+        <a data-nav href="about.html">About me</a>
+        <a data-nav href="research.html">Research</a>
+        <a data-nav href="community.html">Community Services</a>
+        <a data-nav href="teaching.html">Teaching</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="publications.html">Scientific Publications</a>
+        <a data-nav href="conferences.html">Conferences</a>
+        <a data-nav href="books.html">Book/Module</a>
+        <a data-nav href="ipr.html">Intellectual Property Rights</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="page-title reveal">
+          <div class="left">
+            <div class="breadcrumb"><a href="index.html">Home</a> / Intellectual Property Rights</div>
+            <div class="h1">Intellectual Property Rights</div>
+            <p class="lead">Copyright (Hak Cipta), patents, and registered software/works.</p>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://sinta.kemdiktisaintek.go.id/authors/profile/6897560" target="_blank" rel="noopener">Open SINTA</a>
+          </div>
+        </div>
+
+        <div class="card inner reveal">
+          <div id="iprNote" class="notice">
+            Loading IPR data from <span class="kbd">assets/data.json</span>...
+          </div>
+
+          <div class="section compact">
+            <div style="overflow:auto; margin-top:12px;">
+              <table class="table" aria-label="IPR">
+                <thead>
+                  <tr>
+                    <th>Year</th>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Registration No.</th>
+                    <th>Inventors</th>
+                    <th>Holder</th>
+                    <th>Verification</th>
+                  </tr>
+                </thead>
+                <tbody id="iprBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px;">
+        <div>
+          <div style="font-weight:900; letter-spacing:-.01em;">Muhammad Nurwegiono</div>
+          <div><small>Clinical Decision Support Systems • Universitas Ma Chung • 2026</small></div>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn" href="mailto:muhammad.nurwegiono@machung.ac.id">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/muhammadnurwegiono" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://sinta.kemdiktisaintek.go.id/authors/profile/6897560" target="_blank" rel="noopener">SINTA</a>
+          <a class="btn" href="https://muhammadnurwegiono.wordpress.com/" target="_blank" rel="noopener">Blog</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="iconbtn back-to-top" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M12 19V5m-7 7l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="assets/script.js" defer></script>
+
+  <script>
+  (function(){
+    const iprBody = document.getElementById("iprBody");
+    const iprNote = document.getElementById("iprNote");
+
+    fetch("assets/data.json")
+      .then(r => r.json())
+      .then(d => {
+        const note = d?.ipr?.note || "Records are listed below.";
+        const items = Array.isArray(d?.ipr?.items) ? d.ipr.items : [];
+
+        iprNote.innerHTML = `${esc(note)} <span style="margin-left:6px; color:var(--muted2);">(${items.length} record${items.length===1?"":"s"})</span>`;
+
+        if (!items.length) {
+          iprBody.innerHTML = `
+            <tr>
+              <td class="strong">—</td>
+              <td class="muted">No IPR records found in <span class="kbd">ipr.items</span>.</td>
+              <td class="muted">—</td>
+              <td class="muted">—</td>
+              <td class="muted">—</td>
+              <td class="muted">—</td>
+              <td class="muted">—</td>
+            </tr>
+          `;
+          return;
+        }
+
+        // Sort by year desc, then title
+        const sorted = items.slice().sort((a,b) => (toYear(b.year) - toYear(a.year)) || String(a.title||"").localeCompare(String(b.title||"")));
+
+        iprBody.innerHTML = sorted.map(x => {
+          const title = x.link
+            ? `<a href="${escAttr(x.link)}" target="_blank" rel="noopener" class="strong" style="text-decoration:none;">${esc(x.title)}</a>`
+            : `<span class="strong">${esc(x.title)}</span>`;
+
+          return `
+            <tr>
+              <td class="strong">${esc(x.year || "—")}</td>
+              <td class="muted">${title}</td>
+              <td class="muted">${esc(x.category || "—")}</td>
+              <td class="muted">${esc(x.number || "—")}</td>
+              <td class="muted">${esc(x.inventors || "—")}</td>
+              <td class="muted">${esc(x.holder || "—")}</td>
+              <td class="muted">${esc(x.verification || "—")}</td>
+            </tr>
+          `;
+        }).join("");
+      })
+      .catch(() => {
+        iprNote.innerHTML = `Could not load <span class="kbd">assets/data.json</span>. Please check the file path on GitHub Pages.`;
+        iprBody.innerHTML = `
+          <tr>
+            <td class="strong">—</td>
+            <td class="muted">Data unavailable.</td>
+            <td class="muted">—</td>
+            <td class="muted">—</td>
+            <td class="muted">—</td>
+            <td class="muted">—</td>
+            <td class="muted">—</td>
+          </tr>
+        `;
+      });
+
+    function toYear(y){
+      const n = parseInt(String(y||"").replace(/[^\d]/g,""), 10);
+      return Number.isFinite(n) ? n : 0;
+    }
+    function esc(s){
+      return String(s ?? "").replace(/[&<>"']/g, m => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;", "\"":"&quot;","'":"&#39;"
+      }[m]));
+    }
+    function escAttr(s){
+      return String(s ?? "").replace(/"/g, "&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+    }
+  })();
+  </script>
+</body>
+</html>

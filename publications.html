@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Publications | Muhammad Nurwegiono</title>
+  <meta name="description" content="Scientific publications by Muhammad Nurwegiono."/>
+  <meta name="keywords" content="Muhammad Nurwegiono, Health Information Systems, Clinical Decision Support, Knowledge Management, Universitas Ma Chung, Information Systems"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css"/>
+  <style>
+    @media (min-width: 900px) {
+      .navlinks { gap: 10px; }
+      .navlinks a { font-size: 14px; letter-spacing: -0.01em; }
+    }
+    /* page-only (doesn't touch global UI) */
+    .pub-title{ font-weight:900; letter-spacing:-.01em; line-height:1.25; }
+    .pub-meta{ color: var(--muted2); font-size: 13px; margin-top:6px; }
+    .pub-actions{ display:flex; gap:10px; flex-wrap:wrap; margin-top:10px; }
+    .pub-badges{ display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+    .badge{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:6px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      font-size:12px; font-weight:900;
+      color: rgba(255,255,255,.86);
+      white-space:nowrap;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Home">
+          <div class="logo" aria-hidden="true"></div>
+          <span>
+            <span class="title">Muhammad Nurwegiono</span>
+            <span class="subtitle">Health Information Systems • Lecturer</span>
+          </span>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary">
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="research.html">Research</a>
+          <a data-nav href="community.html">Service</a>
+          <a data-nav href="teaching.html">Teaching</a>
+          <a data-nav href="projects.html">Projects</a>
+          <a data-nav href="publications.html">Publications</a>
+          <a data-nav href="conferences.html">Talks</a>
+          <a data-nav href="books.html">Books</a>
+          <a data-nav href="ipr.html">IPR</a>
+        </nav>
+
+        <div class="navright">
+          <a class="btn" href="https://scholar.google.com/citations?user=aySeWLQAAAAJ" target="_blank" rel="noopener" title="Google Scholar">
+            Scholar
+          </a>
+          <button id="mobileToggle" class="iconbtn mobile-toggle" aria-label="Toggle menu">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobilePanel" class="mobile-panel" aria-label="Mobile">
+        <a data-nav href="about.html">About me</a>
+        <a data-nav href="research.html">Research</a>
+        <a data-nav href="community.html">Community Services</a>
+        <a data-nav href="teaching.html">Teaching</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="publications.html">Scientific Publications</a>
+        <a data-nav href="conferences.html">Conferences</a>
+        <a data-nav href="books.html">Book/Module</a>
+        <a data-nav href="ipr.html">Intellectual Property Rights</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="page-title reveal">
+          <div class="left">
+            <div class="breadcrumb"><a href="index.html">Home</a> / Publications</div>
+            <div class="h1">Scientific Publications</div>
+            <p class="lead">
+              <!-- This page renders publications from <span class="kbd">assets/data.json</span>.
+              To show the full authoritative list from Google Scholar, add <span class="kbd">assets/scholar.json</span> (instructions below). -->
+            </p>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://scholar.google.com/citations?user=aySeWLQAAAAJ" target="_blank" rel="noopener">Open Scholar</a>
+          </div>
+        </div>
+
+        <div class="card inner reveal">
+          <div class="searchbar">
+            <input id="searchQuery" class="input" placeholder="Search title, venue, year, keywords..." />
+            <select id="searchFilter" class="select">
+              <option value="All">All</option>
+              <option value="Journal">Journal</option>
+              <option value="Conference">Conference</option>
+              <option value="Book/Chapter">Book/Chapter</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <!-- <div class="notice" style="margin-top:12px;">
+            <b>If your list is still empty:</b> make sure <span class="kbd">assets/data.json</span> contains a <span class="kbd">publications</span> array.
+            (Your current data.json already has it.)
+          </div> -->
+
+          <div id="pubStats" class="notice" style="margin-top:12px; display:none;"></div>
+          <div id="pubList" class="list" style="margin-top:14px;"></div>
+
+          <!-- <div class="notice" style="margin-top:14px;">
+            <b>Optional: show everything from Google Scholar (recommended).</b><br/>
+            Google Scholar cannot be fetched directly from GitHub Pages (blocked by CORS/anti-scraping).<br/>
+            Export your publications from Scholar and save as <span class="kbd">assets/scholar.json</span>.
+            Then this page will automatically merge it with <span class="kbd">data.json</span>.
+          </div>
+        </div> -->
+
+        <!-- <div class="section compact">
+          <div class="card inner reveal">
+            <div class="h2">How to generate assets/scholar.json (2 minutes)</div>
+            <div class="notice">
+              Open Scholar → select publications → Export (BibTeX/CSV). Then convert to JSON.
+              If you paste the exported BibTeX/CSV here, I can convert it to <span class="kbd">scholar.json</span> instantly.
+            </div>
+            <div class="list" style="margin-top:12px;">
+              <div class="item">
+                <div class="pub-title">Recommended JSON format</div>
+                <div class="pub-meta">
+                  Create file <span class="kbd">assets/scholar.json</span> with: <span class="kbd">{ "items": [ ... ] }</span>
+                </div>
+                <pre class="kbd" style="white-space:pre-wrap; margin-top:10px;">{
+  "items": [
+    {
+      "title": "Paper title",
+      "authors": "Author A, Author B",
+      "year": "2025",
+      "venue": "Journal/Conference name",
+      "type": "Journal",
+      "cited_by": 0,
+      "link": "https://...",
+      "doi": "10...."
+    }
+  ]
+}</pre>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px;">
+        <div>
+          <div style="font-weight:900; letter-spacing:-.01em;">Muhammad Nurwegiono</div>
+          <div><small>Health Information Systems • Universitas Ma Chung • 2026</small></div>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn" href="mailto:muhammad.nurwegiono@machung.ac.id">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/muhammadnurwegiono" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://sinta.kemdiktisaintek.go.id/authors/profile/6897560" target="_blank" rel="noopener">SINTA</a>
+          <a class="btn" href="https://muhammadnurwegiono.wordpress.com/" target="_blank" rel="noopener">Blog</a>
+        </div>
+      </div>
+      <!-- <div style="margin-top:12px; color:var(--muted2);">
+        Built for GitHub Pages. Edit <span class="kbd">assets/data.json</span> to update content.
+      </div> -->
+    </div>
+  </footer>
+
+  <button id="backToTop" class="iconbtn back-to-top" title="Back to top"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5m-7 7l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+  <script src="assets/script.js" defer></script>
+
+  <script>
+  (function(){
+    const qEl = document.getElementById("searchQuery");
+    const fEl = document.getElementById("searchFilter");
+    const listEl = document.getElementById("pubList");
+    const statsEl = document.getElementById("pubStats");
+
+    // Load data.json + optional scholar.json
+    Promise.all([
+      fetch("assets/data.json").then(r => r.json()),
+      fetch("assets/scholar.json").then(r => r.ok ? r.json() : null).catch(()=>null)
+    ]).then(([data, scholar]) => {
+      const fromDataJson = normalizeFromDataJson(data);
+      const fromScholar  = normalizeFromScholarJson(scholar);
+
+      // Merge + de-duplicate by (title+year)
+      const merged = dedupe([ ...fromScholar, ...fromDataJson ]);
+
+      // Sort newest first
+      merged.sort((a,b) => (toYear(b.year) - toYear(a.year)) || (b.cited_by - a.cited_by) || a.title.localeCompare(b.title));
+
+      // Render
+      const state = { all: merged, view: merged };
+      renderStats(state.all);
+      renderList(state.view);
+
+      // Bind search
+      function apply(){
+        const q = (qEl.value || "").trim().toLowerCase();
+        const type = fEl.value;
+
+        state.view = state.all.filter(p => {
+          if (type !== "All" && (p.type || "Other") !== type) return false;
+          if (!q) return true;
+          const hay = [
+            p.title, p.venue, p.year, p.authors, p.doi, p.keywords?.join(" ")
+          ].filter(Boolean).join(" ").toLowerCase();
+          return hay.includes(q);
+        });
+
+        renderStats(state.view, state.all.length);
+        renderList(state.view);
+      }
+
+      qEl.addEventListener("input", apply);
+      fEl.addEventListener("change", apply);
+
+    }).catch(err => {
+      console.error("Failed to load publications:", err);
+      listEl.innerHTML = `
+        <div class="item">
+          <div class="pub-title">Could not load publications</div>
+          <div class="pub-meta">Check that <span class="kbd">assets/data.json</span> exists and is accessible from GitHub Pages.</div>
+        </div>
+      `;
+    });
+
+    function normalizeFromDataJson(data){
+      const pubs = Array.isArray(data?.publications) ? data.publications : [];
+      // Your current schema: {year, type, title, venue, note}
+      return pubs.map(p => ({
+        title: p.title || "",
+        authors: p.authors || "", // optional
+        year: p.year || "",
+        venue: p.venue || "",
+        type: mapType(p.type),
+        cited_by: Number(p.cited_by || 0),
+        link: p.link || p.url || "",
+        doi: p.doi || "",
+        note: p.note || ""
+      })).filter(x => x.title);
+    }
+
+    function normalizeFromScholarJson(scholar){
+      const items = Array.isArray(scholar?.items) ? scholar.items : [];
+      return items.map(p => ({
+        title: p.title || "",
+        authors: p.authors || "",
+        year: p.year || "",
+        venue: p.venue || "",
+        type: mapType(p.type),
+        cited_by: Number(p.cited_by || 0),
+        link: p.link || "",
+        doi: p.doi || "",
+        note: p.note || ""
+      })).filter(x => x.title);
+    }
+
+    function dedupe(arr){
+      const seen = new Set();
+      const out = [];
+      for (const p of arr){
+        const key = (p.title || "").trim().toLowerCase() + "|" + String(p.year||"").trim();
+        if (seen.has(key)) continue;
+        seen.add(key);
+        out.push(p);
+      }
+      return out;
+    }
+
+    function renderStats(view, totalAll){
+      const total = view.length;
+      const base = typeof totalAll === "number" ? totalAll : total;
+      const byType = view.reduce((a,p)=>{
+        const t = p.type || "Other";
+        a[t] = (a[t]||0)+1;
+        return a;
+      }, {});
+      const parts = Object.keys(byType).sort().map(k => `${k}: <b>${byType[k]}</b>`).join(" • ");
+
+      statsEl.style.display = "block";
+      statsEl.innerHTML = `Showing <b>${total}</b> of <b>${base}</b> items. ${parts ? " " + parts : ""}`;
+    }
+
+    function renderList(items){
+      if (!items.length){
+        listEl.innerHTML = `
+          <div class="item">
+            <div class="pub-title">No results</div>
+            <div class="pub-meta">Try a different keyword or set filter to <span class="kbd">All</span>.</div>
+          </div>
+        `;
+        return;
+      }
+
+      listEl.innerHTML = items.map(p => {
+        const badges = [
+          p.type ? `<span class="badge">${esc(p.type)}</span>` : "",
+          p.year ? `<span class="badge">${esc(p.year)}</span>` : "",
+          p.cited_by ? `<span class="badge">Cited by ${esc(p.cited_by)}</span>` : "",
+          p.doi ? `<span class="badge">DOI</span>` : ""
+        ].filter(Boolean).join("");
+
+        const meta = [
+          p.authors ? esc(p.authors) : "",
+          p.venue ? esc(p.venue) : ""
+        ].filter(Boolean).join(" • ");
+
+        const links = [
+          p.link ? `<a class="btn" href="${escAttr(p.link)}" target="_blank" rel="noopener">View</a>` : "",
+          `<button class="btn" onclick="copyBibtex('${escAttr(p.title)}', '${escAttr(p.authors)}', '${escAttr(p.year)}', '${escAttr(p.venue)}', '${escAttr(p.type)}')">Cite</button>`,
+          p.doi ? `<a class="btn" href="https://doi.org/${escAttr(p.doi)}" target="_blank" rel="noopener">DOI</a>` : ""
+        ].filter(Boolean).join("");
+
+        return `
+          <div class="item">
+            <div class="pub-title">${esc(p.title)}</div>
+            <div class="pub-meta">${meta || "—"}</div>
+            ${badges ? `<div class="pub-badges">${badges}</div>` : ""}
+            ${p.note ? `<div class="pub-meta" style="margin-top:8px;">${esc(p.note)}</div>` : ""}
+            ${links ? `<div class="pub-actions">${links}</div>` : ""}
+          </div>
+        `;
+      }).join("");
+    }
+
+    function mapType(t){
+      const s = String(t || "").toLowerCase();
+      if (s.includes("journal")) return "Journal";
+      if (s.includes("conference")) return "Conference";
+      if (s.includes("book") || s.includes("chapter")) return "Book/Chapter";
+      if (!s) return "Other";
+      // if already in expected labels:
+      if (t === "Journal" || t === "Conference" || t === "Book/Chapter" || t === "Other") return t;
+      return "Other";
+    }
+
+    function toYear(y){
+      const n = parseInt(String(y||"").replace(/[^\d]/g,""), 10);
+      return Number.isFinite(n) ? n : 0;
+    }
+
+    function esc(s){
+      return String(s ?? "").replace(/[&<>"']/g, m => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"
+      }[m]));
+    }
+    function escAttr(s){
+      // minimal attribute escaping
+      return String(s ?? "").replace(/"/g, "&quot;").replace(/'/g, "\\'").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+    }
+  })();
+  </script>
+</body>
+</html>

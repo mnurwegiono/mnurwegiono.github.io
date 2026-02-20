@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Teaching | Muhammad Nurwegiono</title>
+  <meta name="description" content="Teaching schedule and teaching history of Muhammad Nurwegiono."/>
+  <meta name="keywords" content="Muhammad Nurwegiono, Teaching, Jadwal Kuliah, Sistem Informasi, Universitas Ma Chung"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css"/>
+
+  <!-- Page-only styles (no need to touch style.css) -->
+  <style>
+    @media (min-width: 900px) {
+      .navlinks { gap: 10px; } /* Kurangi jarak antar menu */
+      .navlinks a { font-size: 14px; letter-spacing: -0.01em; } /* Perkecil font sedikit agar muat */
+    }
+    .tabs { display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+    .tabbtn{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 12px; border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color: rgba(255,255,255,.78);
+      font-weight:800; font-size:13px;
+      cursor:pointer;
+    }
+    .tabbtn.active{
+      background: rgba(255,255,255,.08);
+      color: rgba(255,255,255,.92);
+      border-color: rgba(255,255,255,.18);
+    }
+    .tabpane{ display:none; margin-top:14px; }
+    .tabpane.active{ display:block; }
+
+    .day-pill{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:6px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      font-size:12px; font-weight:900;
+      color: rgba(255,255,255,.86);
+      white-space:nowrap;
+    }
+
+    tr.busy td{
+      background: rgba(255, 204, 102, .08) !important;
+      border-top-color: rgba(255, 204, 102, .20) !important;
+      border-bottom-color: rgba(255, 204, 102, .20) !important;
+    }
+
+    .table td .sub{
+      display:block;
+      color: rgba(255,255,255,.58);
+      font-size:12px;
+      margin-top:4px;
+    }
+
+    details.sem{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      border-radius: 16px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+    }
+    details.sem summary{
+      list-style:none;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      font-weight:900;
+      letter-spacing:-.01em;
+    }
+    details.sem summary::-webkit-details-marker{ display:none; }
+    .sem-meta{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+    .sem-body{ margin-top:12px; }
+
+    @media (max-width: 720px){
+      .table thead{ display:none; }
+      .table, .table tbody, .table tr, .table td{ display:block; width:100%; }
+      .table tr td{
+        border-left:1px solid rgba(255,255,255,.10) !important;
+        border-right:1px solid rgba(255,255,255,.10) !important;
+        border-radius: 0 !important;
+      }
+      .table tr td:first-child{ border-top-left-radius:14px !important; border-top-right-radius:14px !important; }
+      .table tr td:last-child{ border-bottom-left-radius:14px !important; border-bottom-right-radius:14px !important; }
+      .table td::before{
+        content: attr(data-label);
+        display:block;
+        color: rgba(255,255,255,.58);
+        font-size:12px;
+        font-weight:850;
+        margin-bottom:6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Home">
+          <div class="logo" aria-hidden="true"></div>
+          <span>
+            <span class="title">Muhammad Nurwegiono</span>
+            <span class="subtitle">Health Information Systems • Lecturer</span>
+          </span>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary">
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="research.html">Research</a>
+          <a data-nav href="community.html">Service</a>
+          <a data-nav href="teaching.html">Teaching</a>
+          <a data-nav href="projects.html">Projects</a>
+          <a data-nav href="publications.html">Publications</a>
+          <a data-nav href="conferences.html">Talks</a>
+          <a data-nav href="books.html">Books</a>
+          <a data-nav href="ipr.html">IPR</a>
+        </nav>
+
+        <div class="navright">
+          <a class="btn" href="https://scholar.google.com/citations?user=aySeWLQAAAAJ" target="_blank" rel="noopener" title="Google Scholar">
+            Scholar
+          </a>
+          <button id="mobileToggle" class="iconbtn mobile-toggle" aria-label="Toggle menu">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobilePanel" class="mobile-panel" aria-label="Mobile">
+        <a data-nav href="about.html">About me</a>
+        <a data-nav href="research.html">Research</a>
+        <a data-nav href="community.html">Community Services</a>
+        <a data-nav href="teaching.html">Teaching</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="publications.html">Scientific Publications</a>
+        <a data-nav href="conferences.html">Conferences</a>
+        <a data-nav href="books.html">Book/Module</a>
+        <a data-nav href="ipr.html">Intellectual Property Rights</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="page-title reveal">
+          <div class="left">
+            <div class="breadcrumb"><a href="index.html">Home</a> / Teaching</div>
+            <div class="h1">Teaching</div>
+            <p class="lead">
+              Current semester schedule and documented teaching history. Includes computed teaching-load metrics and PDF export.
+            </p>
+          </div>
+          <div class="actions">
+            <button id="btnPdf" class="btn primary" type="button" title="Download schedule as PDF">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v10m0 0l4-4m-4 4L8 9M5 15v4h14v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Download schedule (PDF)
+            </button>
+            <button id="btnOpenHistory" class="btn" type="button">Go to history</button>
+          </div>
+        </div>
+
+        <div class="card inner reveal">
+          <div class="h2" style="margin-top:0;">Teaching at a glance</div>
+          <!-- <div class="notice">
+            If <span class="kbd">assets/data.json</span> has <b>teaching_semester</b> & <b>teaching_history</b>, the page will use them.
+            Otherwise, it uses the embedded schedule/history derived from your screenshots (fallback).
+          </div> -->
+
+          <div class="grid-3" style="margin-top:12px;">
+            <div class="stat">
+              <div class="k">Semester</div>
+              <div id="statSemester" class="v" style="font-size:18px;">—</div>
+              <div id="statProgram" class="s">—</div>
+            </div>
+            <div class="stat">
+              <div class="k">Teaching load (current)</div>
+              <div class="v" style="font-size:18px;">
+                <span id="statCourses">0</span> courses
+              </div>
+              <div class="s">
+                Total SKS: <b id="statSKS">0</b> • Total JS: <b id="statJS">0</b>
+              </div>
+            </div>
+            <div class="stat">
+              <div class="k">Busiest day</div>
+              <div id="statBusyDay" class="v" style="font-size:18px;">—</div>
+              <div class="s">
+                <span id="statBusyCount">0</span> classes scheduled
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="Teaching tabs">
+            <button class="tabbtn active" type="button" data-tab="current" aria-selected="true">Current schedule</button>
+            <button class="tabbtn" type="button" data-tab="history" aria-selected="false">Teaching history</button>
+          </div>
+
+          <div id="tab-current" class="tabpane active" role="tabpanel">
+            <div class="h2">Schedule — <span id="scheduleTitle">Genap 2025/2026</span></div>
+            <!-- <div class="notice">
+              Rows on the busiest day are highlighted. Use PDF export for portfolio/BKD evidence.
+            </div> -->
+
+            <div style="overflow:auto; margin-top:12px;">
+              <table class="table" aria-label="Teaching schedule">
+                <thead>
+                  <tr>
+                    <th>Course</th>
+                    <th>Program</th>
+                    <th>Semester</th>
+                    <th>Type</th>
+                    <th>Credits</th>
+                    <th>Class</th>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Room</th>
+                  </tr>
+                </thead>
+                <tbody id="teachScheduleBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div id="tab-history" class="tabpane" role="tabpanel">
+            <div id="history" class="h2">Teaching history (previous semesters)</div>
+            <div class="notice">
+              Collapsible per semester. Add syllabi / LMS / evidence links if needed.
+            </div>
+            <div id="teachHistory" class="list" style="margin-top:12px;"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px;">
+        <div>
+          <div style="font-weight:900; letter-spacing:-.01em;">Muhammad Nurwegiono</div>
+          <div><small>Health Information Systems • Universitas Ma Chung • 2026</small></div>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn" href="mailto:muhammad.nurwegiono@machung.ac.id">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/muhammadnurwegiono" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://sinta.kemdiktisaintek.go.id/authors/profile/6897560" target="_blank" rel="noopener">SINTA</a>
+          <a class="btn" href="https://muhammadnurwegiono.wordpress.com/" target="_blank" rel="noopener">Blog</a>
+        </div>
+      </div>
+      <!-- <div style="margin-top:12px; color:var(--muted2);">
+        Built for GitHub Pages. Edit <span class="kbd">assets/data.json</span> to update content.
+      </div> -->
+    </div>
+  </footer>
+
+  <button id="backToTop" class="iconbtn back-to-top" title="Back to top"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5m-7 7l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+  <script src="assets/script.js" defer></script>
+
+  <!-- PDF libs (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
+
+  <script>
+  (function(){
+    // ===== Tabs =====
+    const tabButtons = Array.from(document.querySelectorAll(".tabbtn"));
+    const panes = {
+      current: document.getElementById("tab-current"),
+      history: document.getElementById("tab-history")
+    };
+    tabButtons.forEach(btn=>{
+      btn.addEventListener("click", ()=>{
+        tabButtons.forEach(b=>b.classList.remove("active"));
+        btn.classList.add("active");
+        tabButtons.forEach(b=>b.setAttribute("aria-selected", b===btn ? "true" : "false"));
+        const t = btn.getAttribute("data-tab");
+        Object.keys(panes).forEach(k=>panes[k].classList.toggle("active", k===t));
+      });
+    });
+
+    document.getElementById("btnOpenHistory").addEventListener("click", ()=>{
+      // switch to history tab + scroll
+      tabButtons.find(b=>b.getAttribute("data-tab")==="history")?.click();
+      setTimeout(()=> document.getElementById("history")?.scrollIntoView({behavior:"smooth", block:"start"}), 60);
+    });
+
+    // ===== Fallback data (from your screenshots) =====
+    const FALLBACK = {
+      teaching_semester: {
+        semester: "Genap 2025/2026",
+        program: "Sistem Informasi",
+        rows: [
+          {"prodi":"MKU","smt":"4","kode":"MPK 430","jenis":"Wajib","mata_kuliah":"Pendidikan Kewarganegaraan","sks":"3","js":"3","kelas":"F","hari":"Rabu","waktu":"13.00–15.30","ruangan":"Theobroma Cacao"},
+          {"prodi":"SI","smt":"2","kode":"SSI1242","jenis":"Wajib","mata_kuliah":"Sistem dan Administrasi Basis Data","sks":"3","js":"3","kelas":"A","hari":"Kamis","waktu":"07.50–10.20","ruangan":"Laboratorium Ole Johan Dahl"},
+          {"prodi":"SI","smt":"2","kode":"SSI1240","jenis":"Wajib","mata_kuliah":"Bahasa Pemrograman","sks":"2","js":"2","kelas":"A","hari":"Selasa","waktu":"10.20–12.00","ruangan":"Laboratorium Ole Johan Dahl"},
+          {"prodi":"SI","smt":"2","kode":"SSI1241","jenis":"Wajib","mata_kuliah":"Praktikum Bahasa Pemrograman","sks":"1","js":"2","kelas":"A","hari":"Selasa","waktu":"13.00–14.40","ruangan":"Laboratorium Ole Johan Dahl"},
+          {"prodi":"SI","smt":"6","kode":"SSI5134","jenis":"Pilihan","mata_kuliah":"Sistem Manajemen Pengetahuan","sks":"3","js":"3","kelas":"A","hari":"Rabu","waktu":"07.50–10.20","ruangan":"Phycocyanin"}
+        ]
+      },
+      teaching_history: [
+        {"semester":"2025/2026 Ganjil","rows":[
+          {"mata_kuliah":"Praktikum Pemrograman Bergerak","kode":"SSI3141","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Praktikum Algoritma dan Pengantar Pemrograman","kode":"SSI1145","kelas":"1","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Pemrograman Bergerak","kode":"SSI3140","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Pancasila","kode":"MPK402","kelas":"F-SI","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Konsep Basis Data","kode":"SSI1142","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"E-Bisnis","kode":"SSI2146","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Algoritma dan Pengantar Pemrograman","kode":"SSI1144","kelas":"A","pt":"Universitas Ma Chung"}
+        ]},
+        {"semester":"2024/2025 Genap","rows":[
+          {"mata_kuliah":"Sistem Manajemen Pengetahuan","kode":"SSI5134","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Sistem dan Administrasi Basis Data","kode":"SSI1242","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Praktikum Bahasa Pemrograman","kode":"SSI1241","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Pendidikan Agama","kode":"MPK401","kelas":"F","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"E-Bisnis","kode":"SSI2146","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Bahasa Pemrograman","kode":"SSI1240","kelas":"A","pt":"Universitas Ma Chung"}
+        ]},
+        {"semester":"2024/2025 Ganjil","rows":[
+          {"mata_kuliah":"Sistem Manajemen Pengetahuan","kode":"SSI5134","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Praktikum Pemrograman Bergerak","kode":"SSI3141","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Praktikum Algoritma dan Pengantar Pemrograman","kode":"SSI1145","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Pemrograman Bergerak","kode":"SSI3140","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Konsep Basis Data","kode":"SSI1142","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"E-Bisnis","kode":"SSI2146","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Algoritma dan Pengantar Pemrograman","kode":"SSI1144","kelas":"A","pt":"Universitas Ma Chung"}
+        ]},
+        {"semester":"2023/2024 Genap","rows":[
+          {"mata_kuliah":"Praktikum Pemrograman Bergerak","kode":"SSI3132","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Pemrograman Bergerak","kode":"SSI3131","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"Manajemen dan Proses TI","kode":"SSI1230","kelas":"A","pt":"Universitas Ma Chung"},
+          {"mata_kuliah":"E-Bisnis","kode":"SSI3230","kelas":"A","pt":"Universitas Ma Chung"}
+        ]}
+      ]
+    };
+
+    // ===== Load data.json + fallback mapping =====
+    fetch("assets/data.json")
+      .then(r => r.json())
+      .then(d => renderTeaching(normalize(d)))
+      .catch(err => {
+        console.warn("Failed to load assets/data.json. Using fallback teaching data.", err);
+        renderTeaching(FALLBACK);
+      });
+
+    function normalize(d){
+      // If user already added these keys later, use them directly.
+      if (d && d.teaching_semester && Array.isArray(d.teaching_semester.rows)) return d;
+
+      // Otherwise: keep your current data.json structure and just attach fallback teaching schedule/history.
+      // This makes the page work immediately without forcing you to edit data.json.
+      return {
+        ...d,
+        teaching_semester: FALLBACK.teaching_semester,
+        teaching_history: FALLBACK.teaching_history
+      };
+    }
+
+    function renderTeaching(d){
+      const sem = d.teaching_semester || FALLBACK.teaching_semester;
+      const rows = sem.rows || [];
+
+      const semesterLabel = sem.semester || "Genap 2025/2026";
+      const programLabel  = sem.program  || "Sistem Informasi";
+
+      document.getElementById("statSemester").textContent = semesterLabel;
+      document.getElementById("statProgram").textContent  = programLabel;
+      document.getElementById("scheduleTitle").textContent = `${semesterLabel} (${programLabel})`;
+
+      const toNum = (v)=> {
+        const n = parseFloat(String(v||"").replace(",", "."));
+        return isNaN(n) ? 0 : n;
+      };
+      const totalCourses = rows.length;
+      const totalSKS = rows.reduce((a,x)=>a + toNum(x.sks), 0);
+      const totalJS  = rows.reduce((a,x)=>a + toNum(x.js), 0);
+
+      document.getElementById("statCourses").textContent = totalCourses;
+      document.getElementById("statSKS").textContent = totalSKS;
+      document.getElementById("statJS").textContent  = totalJS;
+
+      // Busiest day
+      const dayCount = {};
+      rows.forEach(x=>{
+        const day = (x.hari || "").trim() || "—";
+        dayCount[day] = (dayCount[day] || 0) + 1;
+      });
+      let busyDay = "—", busyCount = 0;
+      Object.keys(dayCount).forEach(day=>{
+        if (dayCount[day] > busyCount){
+          busyDay = day; busyCount = dayCount[day];
+        }
+      });
+      document.getElementById("statBusyDay").textContent = busyDay;
+      document.getElementById("statBusyCount").textContent = busyCount;
+
+      // Render schedule
+      const tbody = document.getElementById("teachScheduleBody");
+      tbody.innerHTML = rows.map(x=>{
+        const isBusy = (x.hari||"").trim() === busyDay && busyDay !== "—";
+        const credits = `${esc(x.sks)} SKS <span class="sub">JS: ${esc(x.js)}</span>`;
+        const courseCell = `${esc(x.mata_kuliah)}<span class="sub">${esc(x.kode)} • ${esc(x.jenis)}</span>`;
+        return `
+          <tr class="${isBusy ? "busy" : ""}">
+            <td class="muted" data-label="Course">${courseCell}</td>
+            <td class="muted" data-label="Program">${esc(x.prodi)}</td>
+            <td class="muted" data-label="Semester">${esc(x.smt)}</td>
+            <td class="muted" data-label="Type">${esc(x.jenis)}</td>
+            <td class="muted" data-label="Credits">${credits}</td>
+            <td class="muted" data-label="Class">${esc(x.kelas)}</td>
+            <td class="muted" data-label="Day"><span class="day-pill">${esc(x.hari)}</span></td>
+            <td class="muted" data-label="Time">${esc(x.waktu)}</td>
+            <td class="muted" data-label="Room">${esc(x.ruangan)}</td>
+          </tr>
+        `;
+      }).join("");
+
+      // Render history
+      const histRoot = document.getElementById("teachHistory");
+      const hist = d.teaching_history || FALLBACK.teaching_history;
+      histRoot.innerHTML = (hist || []).map(sem=>{
+        const rws = sem.rows || [];
+        return `
+          <details class="sem">
+            <summary>
+              <span>${esc(sem.semester)}</span>
+              <span class="sem-meta">
+                <span class="pill info">${rws.length} courses</span>
+              </span>
+            </summary>
+            <div class="sem-body" style="overflow:auto;">
+              <table class="table" aria-label="Teaching history ${esc(sem.semester)}">
+                <thead><tr><th>Course</th><th>Code</th><th>Class</th><th>Institution</th></tr></thead>
+                <tbody>
+                  ${rws.map(r=>`
+                    <tr>
+                      <td class="muted" data-label="Course">${esc(r.mata_kuliah)}</td>
+                      <td class="muted" data-label="Code">${esc(r.kode)}</td>
+                      <td class="muted" data-label="Class">${esc(r.kelas)}</td>
+                      <td class="muted" data-label="Institution">${esc(r.pt)}</td>
+                    </tr>
+                  `).join("")}
+                </tbody>
+              </table>
+            </div>
+          </details>
+        `;
+      }).join("");
+
+      // PDF export (uses current rendered data)
+      document.getElementById("btnPdf").onclick = ()=>{
+        try{
+          const { jsPDF } = window.jspdf;
+          const doc = new jsPDF({ orientation:"landscape", unit:"pt", format:"a4" });
+
+          doc.setFont("helvetica", "bold");
+          doc.setFontSize(14);
+          doc.text("Teaching Schedule", 40, 40);
+
+          doc.setFont("helvetica", "normal");
+          doc.setFontSize(11);
+          doc.text(`${semesterLabel} • ${programLabel}`, 40, 60);
+          doc.text(`Total courses: ${totalCourses} | Total SKS: ${totalSKS} | Total JS: ${totalJS} | Busiest day: ${busyDay} (${busyCount})`, 40, 78);
+
+          const head = [["Course", "Program", "Smt", "Type", "SKS", "JS", "Class", "Day", "Time", "Room"]];
+          const body = rows.map(x=>[
+            `${x.mata_kuliah} (${x.kode})`,
+            x.prodi, x.smt, x.jenis,
+            x.sks, x.js, x.kelas, x.hari, x.waktu, x.ruangan
+          ]);
+
+          doc.autoTable({
+            head,
+            body,
+            startY: 100,
+            styles: { font: "helvetica", fontSize: 9, cellPadding: 4 },
+            headStyles: { fillColor: [30,30,45] },
+            didParseCell: function(data){
+              if (data.section === "body"){
+                const day = body[data.row.index][7];
+                if (String(day).trim() === String(busyDay).trim() && busyDay !== "—"){
+                  data.cell.styles.fillColor = [255, 240, 210];
+                }
+              }
+            },
+            margin: { left: 40, right: 40 }
+          });
+
+          const pageCount = doc.internal.getNumberOfPages();
+          for (let i=1;i<=pageCount;i++){
+            doc.setPage(i);
+            doc.setFontSize(9);
+            doc.setTextColor(120);
+            doc.text("Generated from Teaching page (GitHub Pages)", 40, doc.internal.pageSize.getHeight() - 20);
+          }
+
+          doc.save(`Teaching_Schedule_${semesterLabel.replaceAll("/","-").replaceAll(" ","_")}.pdf`);
+        } catch(e){
+          alert("PDF export failed. Please check your internet connection (CDN) or try again.");
+          console.error(e);
+        }
+      };
+    }
+
+    function esc(s){
+      return String(s ?? "").replace(/[&<>"']/g, m => ({
+        "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"
+      }[m]));
+    }
+  })();
+  </script>
+</body>
+</html>

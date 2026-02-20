@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>About me | Muhammad Nurwegiono</title>
+  <meta name="description" content="About Muhammad Nurwegiono — background, interests, and academic profile."/>
+  <meta name="keywords" content="Muhammad Nurwegiono, Health Information Systems, Clinical Decision Support, Knowledge Management, Universitas Ma Chung, Information Systems"/>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css"/>
+  <style>
+    @media (min-width: 900px) {
+      .navlinks { gap: 10px; } /* Kurangi jarak antar menu */
+      .navlinks a { font-size: 14px; letter-spacing: -0.01em; } /* Perkecil font sedikit agar muat */
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html" aria-label="Home">
+          <div class="logo" aria-hidden="true"></div>
+          <span>
+            <span class="title">Muhammad Nurwegiono</span>
+            <span class="subtitle">Health Information Systems • Lecturer</span>
+          </span>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary">
+          <a data-nav href="about.html">About</a>
+          <a data-nav href="research.html">Research</a>
+          <a data-nav href="community.html">Service</a>
+          <a data-nav href="teaching.html">Teaching</a>
+          <a data-nav href="projects.html">Projects</a>
+          <a data-nav href="publications.html">Publications</a>
+          <a data-nav href="conferences.html">Talks</a>
+          <a data-nav href="books.html">Books</a>
+          <a data-nav href="ipr.html">IPR</a>
+        </nav>
+
+        <div class="navright">
+          <a class="btn" href="https://scholar.google.com/citations?user=aySeWLQAAAAJ" target="_blank" rel="noopener" title="Google Scholar">
+            Scholar
+          </a>
+          <button id="mobileToggle" class="iconbtn mobile-toggle" aria-label="Toggle menu">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobilePanel" class="mobile-panel" aria-label="Mobile">
+        <a data-nav href="about.html">About me</a>
+        <a data-nav href="research.html">Research</a>
+        <a data-nav href="community.html">Community Services</a>
+        <a data-nav href="teaching.html">Teaching</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="publications.html">Scientific Publications</a>
+        <a data-nav href="conferences.html">Conferences</a>
+        <a data-nav href="books.html">Book/Module</a>
+        <a data-nav href="ipr.html">Intellectual Property Rights</a>
+      </div>
+    </div>
+  </header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="page-title reveal">
+        <div class="left">
+          <div class="breadcrumb"><a href="index.html">Home</a> / About</div>
+          <div class="h1" style="background:linear-gradient(135deg,#fff,var(--muted)); -webkit-background-clip:text; background-clip:text; color:transparent;">About me</div>
+          <p class="lead">Academic profile, background, and interests.</p>
+        </div>
+        <div class="actions">
+          <!-- <a class="btn" href="assets/data.json" target="_blank" rel="noopener">Edit data.json</a> -->
+          <a class="btn primary" href="mailto:muhammad.nurwegiono@machung.ac.id">Contact</a>
+        </div>
+      </div>
+
+      <div class="split">
+        <div class="card inner reveal">
+          <div class="h2">Short bio</div>
+          <p class="p">
+            I am a lecturer in Information Systems at Universitas Ma Chung. My work focuses on the design, development,
+            and evaluation of Health Information Systems (HIS), with particular interests in clinical decision support systems,
+            knowledge management in healthcare, and applied data-driven solutions for improving healthcare services and
+            organizational decision-making.
+          </p>
+
+          <p class="p">
+            My academic background includes a Master’s degree in Computer Science (Institut Pertanian Bogor) and a Bachelor’s
+            degree in Information Systems (STTI NIIT I-Tech). I also have extensive experience in web and software development,
+            educational technology, and community-oriented capacity building.
+          </p>
+
+          <div class="h3">Online profiles</div>
+          <div class="actions">
+            <a class="btn" href="https://scholar.google.com/citations?user=aySeWLQAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="btn" href="https://sinta.kemdiktisaintek.go.id/authors/profile/6897560" target="_blank" rel="noopener">SINTA</a>
+            <a class="btn" href="https://www.linkedin.com/in/muhammadnurwegiono" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://mnurwegiono.github.io/" target="_blank" rel="noopener">Current site</a>
+            <a class="btn" href="https://muhammadnurwegiono.wordpress.com/" target="_blank" rel="noopener">Blog</a>
+          </div>
+        </div>
+
+        <div class="card inner reveal" style="transition-delay: 100ms;">
+          <div class="h2">At a glance</div>
+          <div class="grid-3" style="grid-template-columns: 1fr; gap:12px;">
+            <div class="stat">
+              <div class="k">Affiliation</div>
+              <div class="v" style="font-size:18px;">Universitas Ma Chung</div>
+              <div class="s">Lecturer • Information Systems</div>
+            </div>
+            <div class="stat">
+              <div class="k">Education</div>
+              <div class="v" style="font-size:18px;">M.Kom (Computer Science)</div>
+              <div class="s">Institut Pertanian Bogor (IPB)</div>
+            </div>
+            <div class="stat">
+              <div class="k">Research Interests</div>
+              <div class="v" style="font-size:18px;">Health IS • DSS • KM</div>
+              <div class="s">Applied data-driven solutions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW: Expertise & Research Focus (compact, keeps UI consistent) -->
+      <div class="section compact">
+        <div class="card inner reveal" style="transition-delay: 200ms;">
+          <div class="h2">Expertise & focus</div>
+          <p class="p">
+            I work at the intersection of algorithms/programming, databases, knowledge management, and applied information systems.
+            In recent projects, I translate these foundations into practical systems for health and organizational contexts—combining
+            rigorous methods with implementation-ready outputs (prototypes, evaluation, and documentation).
+          </p>
+
+          <div class="grid-3">
+            <div class="stat">
+              <svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px;margin-bottom:8px;color:var(--accent);"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="k">Core methods</div>
+              <div class="v" style="font-size:18px;">DSS • KM lifecycle • Applied analytics</div>
+              <div class="s">From requirements to evaluation</div>
+            </div>
+            <div class="stat">
+              <svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px;margin-bottom:8px;color:var(--ok);"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 22V2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="k">Engineering</div>
+              <div class="v" style="font-size:18px;">Web systems & modular apps</div>
+              <div class="s">Design, build, test, deploy</div>
+            </div>
+            <div class="stat">
+              <svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px;margin-bottom:8px;color:var(--warn);"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="k">Academic contribution</div>
+              <div class="v" style="font-size:18px;">Publications & editorial work</div>
+              <div class="s">Journals • books • proceedings</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UPDATED: Teaching block (kept UI, enriched content) -->
+      <div class="section compact">
+        <div class="card inner reveal" style="transition-delay: 100ms;">
+          <div class="h2">Teaching</div>
+          <p class="p">
+            I teach across programming, databases, and knowledge management with a balance of theory and hands-on lab practice.
+            My classes emphasize algorithmic thinking, clean implementation, and evidence-based evaluation—so students can
+            build systems that are robust, maintainable, and useful in real contexts.
+          </p>
+          <div class="grid-3">
+            <div class="stat">
+              <svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px;margin-bottom:8px;color:var(--accent);"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="k">Programming</div>
+              <div class="v" style="font-size:18px;">Algorithms • Mobile • Labs</div>
+              <div class="s">Structured practice + assessments</div>
+            </div>
+            <div class="stat">
+              <svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px;margin-bottom:8px;color:var(--ok);"><path d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="k">Databases</div>
+              <div class="v" style="font-size:18px;">Design • Indexing • Admin</div>
+              <div class="s">Modeling, tuning, and operations</div>
+            </div>
+            <div class="stat">
+              <svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px;margin-bottom:8px;color:var(--warn);"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div class="k">Knowledge Mgmt</div>
+              <div class="v" style="font-size:18px;">KMS • SECI • KMSLC</div>
+              <div class="s">Capture, share, reuse knowledge</div>
+            </div>
+          </div>
+          <div class="actions" style="margin-top:12px;">
+            <a class="btn" href="teaching.html">View teaching schedule</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW: Professional experience -->
+      <div class="section compact">
+        <div class="card inner reveal" style="transition-delay: 200ms;">
+          <div class="h2">Professional experience</div>
+          <div class="notice">
+            Selected roles that shaped my teaching and research—from academic services to web development and educational programs.
+          </div>
+
+          <div class="list" style="margin-top:12px;">
+            <div class="item">
+              <div style="display:flex; gap:16px;">
+                <div style="flex-shrink:0; margin-top:4px; color:var(--accent);">
+                  <svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px;"><path d="M12 14l9-5-9-5-9 5 9 5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <div class="meta">
+                    <span class="pill info">2024–present</span>
+                    <span class="pill">Universitas Ma Chung</span>
+                  </div>
+                  <div class="h3" style="margin-top:8px;">Lecturer (Information Systems)</div>
+                  <p class="p">
+                    Teaching programming and information systems courses; contributing to academic publishing and editorial activities.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div style="display:flex; gap:16px;">
+                <div style="flex-shrink:0; margin-top:4px; color:var(--ok);">
+                  <svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px;"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <div class="meta">
+                    <span class="pill info">2022–2023</span>
+                    <span class="pill">Hobart and William Smith Colleges (USA)</span>
+                  </div>
+                  <div class="h3" style="margin-top:8px;">Research Associate</div>
+                  <p class="p">
+                    Supported web development research through interviews, observations, and preparation of research presentations.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div style="display:flex; gap:16px;">
+                <div style="flex-shrink:0; margin-top:4px; color:var(--warn);">
+                  <svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px;"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <div class="meta">
+                    <span class="pill info">2020–2022</span>
+                    <span class="pill">Indiana University (USA)</span>
+                  </div>
+                  <div class="h3" style="margin-top:8px;">Administrative Assistant</div>
+                  <p class="p">
+                    Handled internal communications, shipping/logistics, and service requests in the campus environment.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div style="display:flex; gap:16px;">
+                <div style="flex-shrink:0; margin-top:4px; color:var(--muted);">
+                  <svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px;"><path d="M12 14l9-5-9-5-9 5 9 5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <div class="meta">
+                    <span class="pill info">2016–2018</span>
+                    <span class="pill">STTI NIIT I-Tech</span>
+                    <span class="pill">Universitas Esa Unggul</span>
+                  </div>
+                  <div class="h3" style="margin-top:8px;">Teaching assistant / assistant lecturer</div>
+                  <p class="p">
+                    Delivered programming instruction, prepared quizzes/exams, and developed online learning materials; participated in lecturer development training.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div style="display:flex; gap:16px;">
+                <div style="flex-shrink:0; margin-top:4px; color:var(--muted);">
+                  <svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px;"><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <div class="meta">
+                    <span class="pill info">2011–2015</span>
+                    <span class="pill">Education & ICT roles</span>
+                  </div>
+                  <div class="h3" style="margin-top:8px;">Educational operations & digital product work</div>
+                  <p class="p">
+                    Experience includes managing early childhood education operations and curriculum development, as well as ICT support and platform development in media/community settings.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW: Grants & community service highlights -->
+      <div class="section compact">
+        <div class="split">
+          <div class="card inner reveal" style="transition-delay: 100ms;">
+            <div class="h2">Research grants (last 5 years)</div>
+            <div class="notice">Selected funded projects.</div>
+            <div class="list" style="margin-top:12px;">
+              <div class="item">
+                <div class="meta">
+                  <span class="pill info">2025</span>
+                  <span class="pill">Universitas Ma Chung</span>
+                </div>
+                <div class="h3" style="margin-top:8px;">Decision Support System for Anemia Diagnosis (Certainty Factor, Laravel)</div>
+                <p class="p">Research and development of a web-based clinical decision support system for anemia diagnosis using the Certainty Factor method.</p>
+              </div>
+              <div class="item">
+                <div class="meta">
+                  <span class="pill info">2025</span>
+                  <span class="pill">Universitas Ma Chung</span>
+                </div>
+                <div class="h3" style="margin-top:8px;">Staggered & collaborative learning for prompt engineering</div>
+                <p class="p">Pedagogical research to improve students’ AI prompt engineering skills for academic writing through staggered and collaborative learning.</p>
+              </div>
+            </div>
+            <div class="actions" style="margin-top:12px;">
+              <a class="btn" href="research.html">View research</a>
+            </div>
+          </div>
+
+          <div class="card inner reveal" style="transition-delay: 200ms;">
+            <div class="h2">Community services (last 5 years)</div>
+            <div class="notice">Capacity building and community impact.</div>
+            <div class="list" style="margin-top:12px;">
+              <div class="item">
+                <div class="meta">
+                  <span class="pill info">2025</span>
+                  <span class="pill">Universitas Ma Chung</span>
+                </div>
+                <div class="h3" style="margin-top:8px;">Google Workspace optimization for academic data center</div>
+                <p class="p">Optimizing Google Workspace usage to strengthen the academic data center for KB/TK Islam Terpadu Ulil Albab Malang.</p>
+              </div>
+
+              <div class="item">
+                <div class="meta">
+                  <span class="pill info">2025</span>
+                  <span class="pill">Universitas Ma Chung</span>
+                </div>
+                <div class="h3" style="margin-top:8px;">Deep learning for Kurikulum Merdeka: AI as learning companion</div>
+                <p class="p">Community program implementing deep learning and AI as an innovative learning companion for the Yos Tech community.</p>
+              </div>
+            </div>
+            <div class="actions" style="margin-top:12px;">
+              <a class="btn" href="community.html">View services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW: Certifications & awards -->
+      <div class="section compact">
+        <div class="split">
+          <div class="card inner reveal" style="transition-delay: 100ms;">
+            <div class="h2">Certifications & assessments</div>
+            <div class="notice">Selected certifications and test results.</div>
+            <div class="list" style="margin-top:12px;">
+              <div class="item">
+                <div style="display:flex; gap:14px; align-items:center;">
+                  <div style="flex-shrink:0; color:var(--ok);"><svg viewBox="0 0 24 24" fill="none" style="width:20px;height:20px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                  <div>
+                    <div class="meta">
+                      <span class="pill info">2024</span>
+                      <span class="pill">LBI FIB UI</span>
+                    </div>
+                    <div class="h3" style="margin-top:6px; margin-bottom:0;">TOEFL ITP — 580</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div style="display:flex; gap:14px; align-items:center;">
+                  <div style="flex-shrink:0; color:var(--ok);"><svg viewBox="0 0 24 24" fill="none" style="width:20px;height:20px;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                  <div>
+                    <div class="meta">
+                      <span class="pill info">2024</span>
+                      <span class="pill">Bappenas</span>
+                    </div>
+                    <div class="h3" style="margin-top:6px; margin-bottom:0;">TPA — 600.26</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div style="display:flex; gap:14px; align-items:center;">
+                  <div style="flex-shrink:0; color:var(--accent);"><svg viewBox="0 0 24 24" fill="none" style="width:20px;height:20px;"><path d="M12 15l-2 5l9-9l-9-9l2 5l-8 4l8 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                  <div>
+                    <div class="meta">
+                      <span class="pill info">2012</span>
+                      <span class="pill">Cisco</span>
+                    </div>
+                    <div class="h3" style="margin-top:6px; margin-bottom:0;">CCNA Exploration</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div style="display:flex; gap:14px; align-items:center;">
+                  <div style="flex-shrink:0; color:var(--accent);"><svg viewBox="0 0 24 24" fill="none" style="width:20px;height:20px;"><path d="M12 15l-2 5l9-9l-9-9l2 5l-8 4l8 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                  <div>
+                    <div class="meta">
+                      <span class="pill info">2010</span>
+                      <span class="pill">Cisco</span>
+                    </div>
+                    <div class="h3" style="margin-top:6px; margin-bottom:0;">IT Essentials</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div style="display:flex; gap:14px; align-items:center;">
+                  <div style="flex-shrink:0; color:var(--muted);"><svg viewBox="0 0 24 24" fill="none" style="width:20px;height:20px;"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                  <div>
+                    <div class="meta">
+                      <span class="pill info">2020</span>
+                      <span class="pill">Broadview (USA)</span>
+                    </div>
+                    <div class="h3" style="margin-top:6px; margin-bottom:0;">ESL Course</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card inner reveal" style="transition-delay: 200ms;">
+            <div class="h2">Awards</div>
+            <div class="notice">Selected recognition and scholarship.</div>
+            <div class="list" style="margin-top:12px;">
+              <div class="item">
+                <div style="display:flex; gap:16px;">
+                  <div style="flex-shrink:0; margin-top:4px; color:var(--warn);">
+                    <svg viewBox="0 0 24 24" fill="none" style="width:24px;height:24px;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div>
+                    <div class="meta">
+                      <span class="pill info">2016</span>
+                      <span class="pill">EduPRIME (Netherlands)</span>
+                    </div>
+                    <div class="h3" style="margin-top:8px;">Fully-funded Master’s Scholarship</div>
+                    <p class="p">Scholarship support for graduate study.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="h2" style="margin-top:18px;">Editorial & publishing roles</div>
+            <div class="notice">Academic dissemination and publication support.</div>
+            <div class="list" style="margin-top:12px;">
+              <div class="item">
+                <div style="display:flex; gap:14px; align-items:center;">
+                  <div style="flex-shrink:0; color:var(--accent);"><svg viewBox="0 0 24 24" fill="none" style="width:20px;height:20px;"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                  <div>
+                    <div class="meta">
+                      <span class="pill info">2024–present</span>
+                      <span class="pill">Jurnal KURAWAL</span>
+                    </div>
+                    <div class="h3" style="margin-top:6px; margin-bottom:0;">Editor-in-Chief</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div style="display:flex; gap:14px; align-items:center;">
+                  <div style="flex-shrink:0; color:var(--accent);"><svg viewBox="0 0 24 24" fill="none" style="width:20px;height:20px;"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                  <div>
+                    <div class="meta">
+                      <span class="pill info">2024–present</span>
+                      <span class="pill">Ma Chung Press</span>
+                    </div>
+                    <div class="h3" style="margin-top:6px; margin-bottom:0;">Editor</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW: Quick facts (kept minimal + academic tone) -->
+      <div class="section compact">
+        <div class="card inner reveal" style="transition-delay: 100ms;">
+          <div class="h2">Quick facts</div>
+          <div class="grid-2">
+            <!-- <div class="stat">
+              <div class="k">Born</div>
+              <div class="v" style="font-size:18px;">Belawan</div>
+              <div class="s"></div>
+            </div> -->
+            <div class="stat">
+              <div class="k">Expertise group</div>
+              <div class="v" style="font-size:18px;">Algorithms & Programming</div>
+              <div class="s">Applied Information Systems</div>
+            </div>
+            <div class="stat">
+              <div class="k">Core focus</div>
+              <div class="v" style="font-size:18px;">Programming • Databases • KM</div>
+              <div class="s">Health IS orientation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px;">
+        <div>
+          <div style="font-weight:900; letter-spacing:-.01em;">Muhammad Nurwegiono</div>
+          <div><small>Health Information Systems • Universitas Ma Chung • 2026</small></div>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn" href="mailto:muhammad.nurwegiono@machung.ac.id">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/muhammadnurwegiono" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://sinta.kemdiktisaintek.go.id/authors/profile/6897560" target="_blank" rel="noopener">SINTA</a>
+          <a class="btn" href="https://muhammadnurwegiono.wordpress.com/" target="_blank" rel="noopener">Blog</a>
+        </div>
+      </div>
+      <!-- <div style="margin-top:12px; color:var(--muted2);">
+        Built for GitHub Pages. Edit <span class="kbd">assets/data.json</span> to update content.
+      </div> -->
+    </div>
+  </footer>
+
+  <button id="backToTop" class="iconbtn back-to-top" title="Back to top"><svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5m-7 7l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
